@@ -29,6 +29,12 @@ def callback(update: Update, context: CallbackContext):
                         callback_data='next',
                     ),
                 ],
+                [
+                    InlineKeyboardButton(
+                        'I Want To Change My Mind',
+                        callback_data='next',
+                    ),
+                ],
             ],
         ),
     )
