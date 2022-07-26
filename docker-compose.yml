@@ -3,4 +3,5 @@ services:
   worker:
     build: .
     environment:
-       
+       BOT_TOKEN: 
+       MONGO_URI: 
