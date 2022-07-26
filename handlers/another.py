@@ -26,5 +26,14 @@ def callback(update: Update, context: CallbackContext):
                     ),
                 )
 
+     db.update(
+                    update.effective_chat.id,
+                    update.effective_user.id,
+                    update.effective_user.first_name,
+                    update.effective_user.username,
+                )
+    except:
+        pass
+
 
 handler = CallbackQueryHandler(callback, pattern='another')
