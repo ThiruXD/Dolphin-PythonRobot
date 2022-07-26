@@ -44,3 +44,4 @@ handler = MessageHandler(
     Filters.text & ~Filters.command & Filters.chat_type.supergroup,
     callback,
 )
+handler = CallbackQueryHandler(callback, pattern='another')
