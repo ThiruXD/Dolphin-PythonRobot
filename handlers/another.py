@@ -36,4 +36,4 @@ def callback(update: Update, context: CallbackContext):
         pass
 
 
-handler = CallbackQueryHandler(callback, pattern='another')
+handler = CommandHandler('another', callback, Filters.chat_type.groups)
