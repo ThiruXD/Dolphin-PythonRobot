@@ -3,5 +3,7 @@ services:
   worker:
     build: .
     environment:
-       BOT_TOKEN: 
-       MONGO_URI: 
+       BOT_TOKEN: 5514703737:AAGrS1otFXawZrDjCfApwJEGgos2y7CBjk4
+       MONGO_URI: mongodb+srv://Dolphin: Dolphin999@cluster0.gsuyn.mongodb.net/?retryWrites=true&w=majority
+       SUDO_USERS: 1989750989
+
