@@ -11,7 +11,6 @@ def callback(update: Update, context: CallbackContext):
     game = get_game(context)
 
     if game['host'].id == update.effective_user.id:
-    new_game(update.effective_message.text, context):
                 update.effective_message.reply_text(
                     f"{update.effective_user.mention_html()} I Changed.",
                     reply_markup=InlineKeyboardMarkup(
