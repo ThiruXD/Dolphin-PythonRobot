@@ -7,7 +7,7 @@ from helpers.wrappers import nice_errors
 
 
 @nice_errors
-def callback(update, context, CallbackContext):
+def callback(update: Update, context: CallbackContext):
     game = get_game(context)
     query = update.callback_query
     if game['host'].id == update.effective_user.id:
