@@ -1,6 +1,7 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.ext import CallbackQueryHandler
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 
 from helpers.game import get_game
 from helpers.wrappers import nice_errors
