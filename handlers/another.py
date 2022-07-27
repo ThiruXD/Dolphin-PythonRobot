@@ -8,9 +8,10 @@ from helpers.wrappers import nice_errors
 
 @nice_errors
 def callback(update, context, CallbackContext):
-game = get_game(context)
+    game = get_game(context)
+    query = update.callback_query
     if game['host'].id == update.effective_user.id:
-        game.message.edit_text(
+        query.message.edit_text(
             text=""" Hi..🤗 I'm *Lonely king*
                  \nMy source code is private  [support](t.me/thanimaisupport) .""",
             parse_mode=ParseMode.MARKDOWN,
