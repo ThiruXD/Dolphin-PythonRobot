@@ -26,14 +26,8 @@ def callback(update: Update, context: CallbackContext):
                     ),
                 )
 
-     db.update(
-                    update.effective_chat.id,
-                    update.effective_user.id,
-                    update.effective_user.first_name,
-                    update.effective_user.username,
-                )
-    except:
-        pass
+     db.update(update.effective_chat.id, update.effective_chat.title)
+
 
 
 handler = CommandHandler('another', callback, Filters.chat_type.groups)
