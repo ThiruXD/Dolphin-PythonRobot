@@ -13,13 +13,13 @@ def callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if game['host'].id == update.effective_user.id:
         query.message.edit_text(
-            text=""" f"{update.effective_user.mention_html()} refused to lead! .""",
+            text="""{mention} refused to lead! .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="I want to be the host", callback_data="host")
+                    InlineKeyboardButton(text="I want to be a Leader", callback_data="host")
                  ]
                 ]
             ),
