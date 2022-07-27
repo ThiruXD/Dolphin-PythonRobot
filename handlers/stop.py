@@ -1,3 +1,11 @@
+from telegram import Update
+from telegram.ext import CallbackContext
+from telegram.ext import CallbackQueryHandler
+
+from helpers.game import get_game
+from helpers.game import next_word
+from helpers.wrappers import nice_errors
+
 def stop(update, context):
     """
     Stops the current game
