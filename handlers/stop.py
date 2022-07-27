@@ -25,7 +25,7 @@ def stop(update, context):
         update.message.reply_text("Немає гри, яку я можу зупинити")
 
 
-     CHOOSING_PLAYER: [CallbackQueryHandler(callback, pattern="next_word"),
+     handler: [CallbackQueryHandler(callback, pattern="next_word"),
                               CommandHandler('stop', stop)],
 
 
