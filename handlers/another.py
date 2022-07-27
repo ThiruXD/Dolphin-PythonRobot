@@ -25,8 +25,6 @@ def callback(update: Update, context: CallbackContext):
                     ),
                 )
 
-     db.update(update.effective_chat.id, update.effective_chat.title)
-
 
 
 handler = CommandHandler('another', callback, Filters.chat_type.groups)
