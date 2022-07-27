@@ -7,23 +7,23 @@ from helpers.wrappers import nice_errors
 
 
 @nice_errors
-def callback(update: Update, context: CallbackContext):
-    game = get_game(context)
-
+def callback(update, context, CallbackContext):
+game = get_game(context)
+    query = update.callback_query
     if game['host'].id == update.effective_user.id:
-                update.effective_message.reply_text(
-                    f"{update.effective_user.mention_html()} I Changed.",
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton(
-                                    'I want to be the host',
-                                    callback_data='host',
-                                ),
-                            ],
-                        ],
-                    ),
-                )
+        query.message.edit_text(
+            text=""" Hi..🤗 I'm *Lonely king*
+                 \nMy source code is private  [support](t.me/thanimaisupport) .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="I want to be the host", callback_data="host")
+                 ]
+                ]
+            ),
+        )
 
 
 
