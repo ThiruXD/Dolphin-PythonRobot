@@ -33,7 +33,7 @@ def callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         'I Want To Change My Mind',
-                        callback_data='another',
+                        callback_data='stop',
                     ),
                 ],
             ],
