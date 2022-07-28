@@ -20,8 +20,10 @@ dp = updater.dispatcher
 if __name__ == '__main__':
     import os
     import sys
-    from threading import Thread
-
+    from threading import Thread 
+    from mongo import users
+    
+    from helpers.wrappers import nice_errors
     from telegram import Update
     from telegram.ext import CallbackContext, CommandHandler
 
@@ -30,7 +32,7 @@ if __name__ == '__main__':
 
     if '-r' in sys.argv:
 
-            updater.bot.send_message(chat, 'Restarted.')
+            update.effective_message.reply_text( 'Restarted.')
 
     def stop_and_restart(chat, msg):
         updater.stop()
