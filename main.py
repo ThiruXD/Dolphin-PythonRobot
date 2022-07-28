@@ -30,8 +30,8 @@ if __name__ == '__main__':
     from handlers import add_handlers
 
 
-    if '-r' in sys.argv:
-            updater.bot.send_message(user, 'Restarted.')
+    if '-stop' in sys.argv:
+            msg = await message.reply_text("Restarting")
 
     def stop_and_restart(chat, msg):
         updater.stop()
