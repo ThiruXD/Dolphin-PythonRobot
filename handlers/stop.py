@@ -1,5 +1,7 @@
 from telegram import Update
 from datetime import datetime
+from telegram.ext import CommandHandler
+from telegram.ext import Filters
 from telegram.ext import CallbackContext
 from telegram.ext import CallbackQueryHandler
 
@@ -27,7 +29,7 @@ def stop(update, context):
         update.message.reply_text("Немає гри, яку я можу зупинити")
 
 
-  handler = CallbackQueryHandler(callback, pattern='stop')
+  handler = CommandHandler('stop', callback, Filters.chat_type.groups)
 
 states={
             CHOOSING_PLAYER: [CallbackQueryHandler(next_word, pattern="next_word"),
