@@ -11,7 +11,7 @@ def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
         update.effective_message.reply_text(
-            f'{update.effective_user.mention_html()} Stopped the game.',
+            f'{update.effective_user.mention_html()} The Game Is Stopped.🔴 /Stop@DolphinGameBot, You Can Start a New Game By Pressing The Button.',
         )
     except Exception as e:
         update.effective_message.reply_text(f'Error: {e}')
