@@ -6,7 +6,6 @@
     from helpers.wrappers import nice_errors
     from telegram import Update
     from telegram.ext import CallbackContext, CommandHandler
-    from handlers import add_handlers
 
     def stop_and_restart(chat, msg):
         updater.stop()
