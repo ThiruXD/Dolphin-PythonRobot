@@ -2,7 +2,7 @@ from telegram.ext import Defaults
 from telegram.ext import Updater
 
 from config import BOT_TOKEN
-
+from config import SUDO_USERS
 
 updater = Updater(
     token=BOT_TOKEN,
@@ -20,18 +20,20 @@ dp = updater.dispatcher
 if __name__ == '__main__':
     import os
     import sys
+    from threading import Thread
     from threading import Thread 
     from mongo import users
-    
+
     from helpers.wrappers import nice_errors
     from telegram import Update
     from telegram.ext import CallbackContext, CommandHandler
 
     from handlers import add_handlers
+    from helpers.filters import sudo_only
 
-
-    if '-stop' in sys.argv:
-            msg = message.reply_text("Restarting")
+    if '-r' in sys.argv:
+        for user in SUDO_USERS:
+            updater.bot.send_message(user, 'Restarted.')
 
     def stop_and_restart(chat, msg):
         updater.stop()
@@ -52,8 +54,9 @@ if __name__ == '__main__':
             ),
         ).start()
 
-    dp.add_handler(CommandHandler('stop', restart))
+    dp.add_handler(CommandHandler('stop', restart, sudo_only))
     add_handlers(dp)
 
     updater.start_polling(drop_pending_updates=True)
     updater.idle()
+
