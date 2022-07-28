@@ -5,6 +5,7 @@ from telegram.ext import Filters
 from telegram.ext import CallbackContext
 from telegram.ext import CallbackQueryHandler
 
+import mongo.chats as db
 from helpers.game import get_game
 from helpers.game import next_word
 from helpers.wrappers import nice_errors
