@@ -7,6 +7,7 @@ from telegram.ext import Filters
 
 import mongo.chats as db
 from helpers.game import new_game
+from helpers.game import end_game
 from helpers.wrappers import nice_errors
 
 
@@ -33,7 +34,7 @@ def callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         'I Want To Change My Mind',
-                        callback_data='stop',
+                        callback_data='end_game',
                     ),
                 ],
             ],
