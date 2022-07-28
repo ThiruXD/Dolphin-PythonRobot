@@ -13,7 +13,7 @@ def callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if game['host'].id == update.effective_user.id:
         query.message.edit_text(
-            text="""f"{update.effective_user.mention_html()} refused to lead! .""",
+            text=f"""{update.effective_user.mention_html()} refused to lead! .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
