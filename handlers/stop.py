@@ -20,13 +20,13 @@ def stop(update, context):
         context.chat_data['view'] = None
         context.chat_data['next'] = None
         context.chat_data["host"] = False
-        update.message.reply_text("Я зупинив гру")
+        update.message.reply_text("I stopped the game")
 
         # Changing the state to CHOOSING_PLAYER
         return CHOOSING_PLAYER
 
     else:
-        update.message.reply_text("Немає гри, яку я можу зупинити")
+        update.message.reply_text("There is no game I can stop")
 
 
   handler = CommandHandler('stop', callback, Filters.chat_type.groups)
