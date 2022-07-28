@@ -30,7 +30,7 @@ def stop(update, context):
         update.message.reply_text("There is no game I can stop")
 
 
-  handler = CommandHandler('stop', callback, Filters.chat_type.groups)
+
 
 states={
             CHOOSING_PLAYER: [CallbackQueryHandler(next_word, pattern="next_word"),
