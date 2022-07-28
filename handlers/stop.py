@@ -26,5 +26,5 @@ from helpers.game import is_true
     dp.add_handler(CommandHandler('stop', stop))
     add_handlers(dp)
 
-    updater.start_polling(drop_pending_updates=True)
-    updater.idle()
+   
+
