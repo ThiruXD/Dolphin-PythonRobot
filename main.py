@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
 
     if '-stop' in sys.argv:
-            msg = await message.reply_text("Restarting")
+            msg = message.reply_text("Restarting")
 
     def stop_and_restart(chat, msg):
         updater.stop()
