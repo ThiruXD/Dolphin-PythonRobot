@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
     if '-r' in sys.argv:
 
-            update.effective_chat.reply_text( 'Restarted.')
+            update.effective_chat.reply_text('Restarted.')
 
     def stop_and_restart(chat, msg):
         updater.stop()
