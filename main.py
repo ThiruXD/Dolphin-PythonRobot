@@ -54,7 +54,7 @@ if __name__ == '__main__':
             ),
         ).start()
 
-    dp.add_handler(CommandHandler('stop', restart, sudo_only))
+    dp.add_handler(CommandHandler('r', restart, sudo_only))
     add_handlers(dp)
 
     updater.start_polling(drop_pending_updates=True)
