@@ -13,7 +13,7 @@ from helpers.wrappers import nice_errors
 
 
 @nice_errors
-    def callback(update: Update, context: CallbackContext):
+    def (update: Update, context: CallbackContext):
         update.effective_message.reply_text('Stoping...')
             target=stop_and_restart, args=(
                 update.effective_chat.id,
