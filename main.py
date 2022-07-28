@@ -31,7 +31,6 @@ if __name__ == '__main__':
 
 
     if '-r' in sys.argv:
-
             updater.bot.send_message(user, 'Restarted.')
 
     def stop_and_restart(chat, msg):
