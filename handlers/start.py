@@ -6,7 +6,6 @@ from telegram.ext import CommandHandler
 from telegram.ext import Filters
 
 import mongo.chats as db
-from handlers import add_handlers
 from helpers.game import new_game
 from helpers.wrappers import nice_errors
 
