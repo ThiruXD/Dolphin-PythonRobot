@@ -25,7 +25,7 @@ def stop(update, context):
         update.message.reply_text("Немає гри, яку я можу зупинити")
 
 
- handler = CallbackQueryHandler(callback, pattern="stop")
+  handler = CallbackQueryHandler(callback, pattern='stop')
                             
 
 
