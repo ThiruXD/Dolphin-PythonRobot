@@ -1,5 +1,3 @@
-    import os
-    import sys
     from threading import Thread 
     from mongo import users
 
