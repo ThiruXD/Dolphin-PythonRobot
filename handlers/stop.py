@@ -7,6 +7,8 @@ from helpers.game import get_game
 from helpers.game import next_word
 from helpers.wrappers import nice_errors
 
+CHOOSING_PLAYER = range(2)
+
 def stop(update, context):
     """
     Stops the current game
@@ -26,6 +28,13 @@ def stop(update, context):
 
 
   handler = CallbackQueryHandler(callback, pattern='stop')
+
+states={
+            CHOOSING_PLAYER: [CallbackQueryHandler(next_word, pattern="next_word"),
+                              CommandHandler('stop', stop)],
+
+        }
+
                             
 
 
