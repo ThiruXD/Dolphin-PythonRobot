@@ -11,10 +11,10 @@ def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
         update.effective_message.reply_text(
-            f'{update.effective_user.mention_html()} aborted the game.',
+            f'{update.effective_user.mention_html()} Stopped the game.',
         )
     except Exception as e:
         update.effective_message.reply_text(f'Error: {e}')
 
 
-handler = CommandHandler('abort', callback)
+handler = CommandHandler('stop', callback)
