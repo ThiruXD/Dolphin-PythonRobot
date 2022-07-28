@@ -1,6 +1,5 @@
     import os
     import sys
-    from threading import Thread
     from threading import Thread 
     from mongo import users
 
@@ -11,13 +10,11 @@
 
     def stop_and_restart(chat, msg):
         updater.stop()
-            *sys.argv,
-            '-r',
             f'{chat}_{msg}',
         )
 
-    def restart(update: Update, context: CallbackContext):
-        update.effective_message.reply_text('Restarting...')
+    def stop(update, context):
+        update.effective_message.reply_text('Stoping...')
         Thread(
             target=stop_and_restart, args=(
                 update.effective_chat.id,
@@ -25,7 +22,7 @@
             ),
         ).start()
 
-    dp.add_handler(CommandHandler('stop', restart))
+    dp.add_handler(CommandHandler('stop', stop))
     add_handlers(dp)
 
     updater.start_polling(drop_pending_updates=True)
