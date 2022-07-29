@@ -14,8 +14,8 @@ def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
         update.effective_message.reply_text(
-            f'{update.effective_user.mention_html()} The Game Is Stopped.🔴 /Start@DolphinGameBot, You Can Start a New Game By Pressing The Button.',)
-           reply_markup=InlineKeyboardMarkup(
+            f'{update.effective_user.mention_html()} The Game Is Stopped.🔴 /Start@DolphinGameBot, You Can Start a New Game By Pressing The Button.',
+            reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton(
