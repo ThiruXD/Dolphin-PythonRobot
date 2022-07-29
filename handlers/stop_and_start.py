@@ -40,3 +40,5 @@ from helpers.wrappers import nice_errors
         pass
 
         handler = CallbackQueryHandler(callback, pattern='mind_changed')
+
+
