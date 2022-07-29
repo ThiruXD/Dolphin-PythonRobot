@@ -1,4 +1,6 @@
 from telegram import Update
+from telegram import InlineKeyboardButton
+from telegram import InlineKeyboardMarkup
 from telegram.ext import CallbackContext
 from telegram.ext import CommandHandler
 from telegram.ext import CallbackQueryHandler
@@ -12,8 +14,18 @@ def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
         update.effective_message.reply_text(
-            f'{update.effective_user.mention_html()} The Game Is Stopped.🔴 /Start@DolphinGameBot, You Can Start a New Game By Pressing The Button.',
-        )
+            f'{update.effective_user.mention_html()} The Game Is Stopped.🔴 /Start@DolphinGameBot, You Can Start a New Game By Pressing The Button.',)
+           reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    'I want to be the host',
+                                    callback_data='host',
+                                ),
+                            ],
+                        ],
+                    ),
+                )
     except Exception as e:
         update.effective_message.reply_text(f'Error: {e}')
 
