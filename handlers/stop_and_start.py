@@ -17,7 +17,7 @@ from helpers.wrappers import nice_errors
          try:
              end_game(context)
                 update.effective_message.reply_text(
-                    f"{update.effective_user.mention_html()} guessed the correct word, {game['word']}.",
+                    f"{update.effective_user.mention_html()} Host any one.",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
