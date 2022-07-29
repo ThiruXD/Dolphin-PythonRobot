@@ -1,6 +1,7 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.ext import CommandHandler
+from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
 from helpers.wrappers import admin_only
