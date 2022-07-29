@@ -39,6 +39,6 @@ from helpers.wrappers import nice_errors
     except:
         pass
 
-        handler = CallbackQueryHandler(callback, pattern='mind_changed')
+        handler = CallbackQueryHandler(callback, pattern='changed')
 
 
