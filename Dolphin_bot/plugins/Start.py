@@ -58,8 +58,7 @@ async def start(bot, message):
              update.effective_message.reply_photo(
                photo=random.choice(HMF_IMG),
                 caption=PM_START_TEXT.format(m.from_user.mention),                   
-                reply_markup=InlineKeyboardMarkup(buttons).
-     )
+                reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
