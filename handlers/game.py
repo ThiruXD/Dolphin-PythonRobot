@@ -29,7 +29,7 @@ def callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         'Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 🆎',
-                        callback_data='next',
+                        callback_data='bgame',
                     ),
                 ],
             ],
