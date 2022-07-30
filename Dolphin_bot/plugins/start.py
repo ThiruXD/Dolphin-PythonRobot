@@ -2,9 +2,9 @@ from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
-from kelime_bot import oyun
-from kelime_bot.helpers.kelimeler import *
-from kelime_bot.helpers.keyboards import *
+from Dolphin_bot import oyun
+from Dolphin_bot.helpers.kelimeler import *
+from Dolphin_bot.helpers.keyboards import *
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
