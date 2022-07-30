@@ -3,6 +3,7 @@ from telegram import InlineKeyboardMarkup
 from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.ext import Filters
+from telegram.ext import CallbackQueryHandler
 from telegram.ext import MessageHandler
 
 import mongo.users as db
@@ -32,4 +33,4 @@ def callback(update: Update, context: CallbackContext):
         ),
     )
 
-   handler = CallbackQueryHandler(callback, pattern='language')
+   handler = CallbackQueryHandler(callback, pattern='multi_language')
