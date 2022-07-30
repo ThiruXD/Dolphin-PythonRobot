@@ -38,4 +38,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-  handler = CommandHandler('game', callback)
+  handler = CommandHandler('two_gam', callback)
