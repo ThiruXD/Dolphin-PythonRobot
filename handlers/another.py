@@ -5,6 +5,10 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 
 from helpers.game import get_game
 from helpers.wrappers import nice_errors
+import mongo.chats as db
+from telegram.ext import get_lang, set_lang
+from telegram.ext import (ActualAdminCB, language,
+                                         languageCB)
 
 
 @nice_errors
@@ -19,10 +23,10 @@ def callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="English", callback_data="next")
+                    InlineKeyboardButton(text="English", callback_data=f"languages:en")
                  ],
                  [
-                    InlineKeyboardButton(text="Tamil", callback_data="view")
+                    InlineKeyboardButton(text="Tamil", callback_data=f"languages:ta",)
                  ]
                 ]
             ),
