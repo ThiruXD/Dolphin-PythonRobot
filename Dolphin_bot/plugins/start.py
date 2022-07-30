@@ -31,7 +31,6 @@ buttons = [
     ],
     [
         InlineKeyboardButton("📚  Cᴏᴍᴍᴀɴᴅs  Aɴᴅ  Hᴇʟᴘ  📚", callback_data="host"),   
-    ),
     ],
 ]
 
