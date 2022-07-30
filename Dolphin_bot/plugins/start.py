@@ -52,7 +52,7 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-               message.reply_photo(
+              await message.reply_photo(
                photo=random.choice(HMF),
                caption=PM_START_TEXT.format(                        
                 reply_markup=InlineKeyboardMarkup(buttons),
