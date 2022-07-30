@@ -11,14 +11,14 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("Aᴅᴅ  Tᴏ  Yᴏᴜʀ  Gʀᴏᴜᴘ  📚", url=f"http://t.me/DolphinGameBot?startgroup=new")
+        InlineKeyboardButton("➕ Aᴅᴅ  Tᴏ  Yᴏᴜʀ  Gʀᴏᴜᴘ ➕", url=f"http://t.me/DolphinGameBot?startgroup=new")
     ],
     [
         InlineKeyboardButton("📢  Uᴘᴅᴀᴛᴇs", url="https://t.me/+u-YFXF8x-Rw0M2Rl"),
         InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ⚠️", url="https://t.me/+u-YFXF8x-Rw0M2Rl"),
     ],
     [
-        InlineKeyboardButton("🇹🇷 Help", url="t.me/MajesteSahip"),
+        InlineKeyboardButton("📚 Help 📚", url="t.me/MajesteSahip"),
     ]
 ])
 
