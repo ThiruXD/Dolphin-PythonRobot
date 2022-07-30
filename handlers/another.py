@@ -6,9 +6,6 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 from helpers.game import get_game
 from helpers.wrappers import nice_errors
 import mongo.chats as db
-from telegram.ext import get_lang, set_lang
-from telegram.ext import (ActualAdminCB, language,
-                                         languageCB)
 
 
 @nice_errors
