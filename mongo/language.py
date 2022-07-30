@@ -1,6 +1,6 @@
 from strings import get_string
-from telegram.ext.misc import SUDOERS
-from telegram.ext.utils.database import (get_lang, is_commanddelete_on,
+from telegram.ext import SUDO_USERS
+from telegram.ext import (get_lang, is_commanddelete_on,
                                        is_maintenance)
 
 
@@ -22,7 +22,7 @@ from telegram.ext.utils.database import (get_lang, is_commanddelete_on,
 def languageCB(mystic):
     async def wrapper(_, CallbackQuery, **kwargs):
         if await is_maintenance() is False:
-            if CallbackQuery.from_user.id not in SUDOERS:
+            if CallbackQuery.from_user.id not in SUDO_USERS:
                 return await CallbackQuery.answer(
                     "Bot is under maintenance. Please wait for some time...",
                     show_alert=True,
