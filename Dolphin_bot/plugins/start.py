@@ -3,13 +3,14 @@ from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
+from Dolphin_bot import updater
 from Dolphin_bot import oyun
 from Dolphin_bot.helpers.kelimeler import *
 from Dolphin_bot.helpers.keyboards import *
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-HMF = (
+HMF_IMG = (
       "https://telegra.ph/file/9332b113ddb8555bf6ffe.jpg",
       "https://telegra.ph/file/357a3279b2960dd79a549.jpg",
   )
@@ -54,7 +55,7 @@ HELP = """
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
              update.effective_message.reply_photo(
-                random.choice(HMF),
+                random.choice(HMF_IMG),
                 PM_START_TEXT.format(                      
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
