@@ -8,7 +8,7 @@ from . import paraphrase
 from . import next
 from . import scores
 from . import another
-from . import game
+from . import two_gam
 from . import view
 
 
@@ -21,7 +21,7 @@ def add_handlers(dp: Dispatcher):
     dp.add_handler(next.handler)
     dp.add_handler(scores.handler)
     dp.add_handler(another.handler)
-    dp.add_handler(game.handler)
+    dp.add_handler(two_gam.handler)
     dp.add_handler(view.handler)
 
 
