@@ -7,5 +7,5 @@ RUN mkdir /app/
 WORKDIR /app/
 COPY . /app/
 RUN pip3 install -U -r requirements.txt
-CMD ["python3", "Dolphin_bot/__init__.py"] 
+CMD ["python3", "main.py", "Dolphin_bot/__init__.py"] 
 
