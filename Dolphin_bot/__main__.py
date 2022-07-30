@@ -1,18 +1,4 @@
 from Dolphin_bot import bot
-from Dolphin_bot import Updater
-
-from config import BOT_TOKEN
-from config import SUDO_USERS
-
-updater = Updater(
-    token=BOT_TOKEN,
-        parse_mode='HTML',
-        disable_web_page_preview=True,
-        quote=False,
-        run_async=True)
-
-dp = updater.dispatcher
-
 
 if __name__ == "__main__":
     import os
