@@ -33,4 +33,4 @@ def callback(update: Update, context: CallbackContext):
         ),
     )
 
-   handler = CallbackQueryHandler(callback, pattern='multi_language')
+   handler = CallbackQueryHandler(callback, pattern='multilanguage')
