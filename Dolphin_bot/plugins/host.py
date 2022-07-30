@@ -1,8 +1,8 @@
 from telegram import InlineKeyboardButton
 from telegram import InlineKeyboardMarkup
 from telegram import Update
-from telegram.ext import CallbackContext
-from telegram.ext import CallbackQueryHandler
+from Dolphin_bot import CallbackContext
+from Dolphin_bot import CallbackQueryHandler
 
 import mongo.chats as db
 from helpers.game import new_game
