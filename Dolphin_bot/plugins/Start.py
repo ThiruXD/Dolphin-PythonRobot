@@ -3,7 +3,6 @@ from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
-from Dolphin_bot import updater
 from Dolphin_bot import oyun
 from Dolphin_bot.helpers.kelimeler import *
 from Dolphin_bot.helpers.keyboards import *
