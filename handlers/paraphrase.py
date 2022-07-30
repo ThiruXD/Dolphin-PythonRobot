@@ -49,4 +49,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-handler = CallbackQueryHandler(callback, pattern='view')
+handler = CallbackQueryHandler(callback, pattern='paraphrase')
