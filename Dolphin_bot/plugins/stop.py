@@ -1,6 +1,6 @@
 from telegram import Update
-from telegram.ext import CallbackContext
-from telegram.ext import CommandHandler
+from Dolphin_bot import CallbackContext
+from Dolphin_bot import CommandHandler
 
 from helpers.game import end_game
 from helpers.wrappers import admin_only
