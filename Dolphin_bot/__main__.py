@@ -1,5 +1,4 @@
 from Dolphin_bot import bot
-from Dolphin_bot import Defaults
 from Dolphin_bot import Updater
 
 from config import BOT_TOKEN
@@ -7,7 +6,6 @@ from config import SUDO_USERS
 
 updater = Updater(
     token=BOT_TOKEN,
-    defaults=Defaults(
         parse_mode='HTML',
         disable_web_page_preview=True,
         quote=False,
