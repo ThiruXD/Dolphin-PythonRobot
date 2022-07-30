@@ -51,6 +51,7 @@ HELP = """
 """
 
 # Komutlar. 
+ else:
 
               update.effective_message.reply_photo(
                 random.choice(HMF),
