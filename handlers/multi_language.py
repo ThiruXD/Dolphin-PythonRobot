@@ -27,7 +27,7 @@ def callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         'Next',
-                        callback_data='Tamil',
+                        callback_data='next',
                     ),
                 ],
             ],
