@@ -48,4 +48,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-handler = CommandHandler('Paraphrase', callback, Filters.chat_type.groups)
+handler = CommandHandler('paraphrase', callback, Filters.chat_type.groups)
