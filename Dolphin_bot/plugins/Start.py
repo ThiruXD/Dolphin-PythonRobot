@@ -1,5 +1,6 @@
 import random
 from pyrogram import Client
+from telegram import Update
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
