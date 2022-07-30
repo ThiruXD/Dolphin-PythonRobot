@@ -51,9 +51,9 @@ HELP = """
 """
 
 # Komutlar. 
- else:
-
-              update.effective_message.reply_photo(
+ @bot.on_message(filters.command(["start","help"]))
+async def start(_, m):
+             update.effective_message.reply_photo(
                 random.choice(HMF),
                 PM_START_TEXT.format(                      
                 reply_markup=InlineKeyboardMarkup(buttons),
