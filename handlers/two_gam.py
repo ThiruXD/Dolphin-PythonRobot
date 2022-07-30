@@ -38,4 +38,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-  handler = CommandHandler('two_gam', callback)
+  handler = CallbackQueryHandler(callback, pattern='another')
