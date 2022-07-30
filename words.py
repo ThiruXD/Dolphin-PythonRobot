@@ -15,16 +15,6 @@ all_words = list(
     ),
 )
 
-all_words = list(
-    map(
-        _,
-        open(
-            'wordlists/ta.txt',
-            encoding='UTF-8',
-        ).read().split(),
-    ),
-)
-
 
 def choice() -> str:
     return choice_(all_words)
