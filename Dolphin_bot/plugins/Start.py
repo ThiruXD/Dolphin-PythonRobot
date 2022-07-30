@@ -1,5 +1,6 @@
 import random
 from pyrogram.types import *
+from pyrogram import __version__ as pyro
 from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
