@@ -10,7 +10,7 @@ def make_sure_in_game(context: CallbackContext) -> bool:
     game = context.chat_data.get('game')
 
     if game:
-        if (time() - game['start']) >= 300:
+        if (time() - game['game']) >= 300:
             end_game(context)
             raise Exception('There is no game going on.')
 
@@ -23,7 +23,7 @@ def make_sure_not_in_game(context: CallbackContext) -> bool:
     game = context.chat_data.get('game')
 
     if game:
-        if (time() - game['start']) >= 300:
+        if (time() - game['game']) >= 300:
             end_game(context)
             return True
 
@@ -55,7 +55,7 @@ def requires_game_not_running(func):
 @requires_game_not_running
 def new_game(host: User, context: CallbackContext) -> bool:
     context.chat_data['game'] = {
-        'start': time(),
+        'game': time(),
         'host': host,
         'word': choice(),
     }
