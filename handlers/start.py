@@ -40,7 +40,7 @@ def callback(update: Update, context: CallbackContext):
                  [
                     InlineKeyboardButton(
                         'Settings',
-                        callback_data='language',
+                        callback_data='another',
                     ),
                 ],
             ],
