@@ -36,4 +36,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-handler = CommandHandler('game', callback, Filters.chat_type.groups)
+  handler = CommandHandler('game', callback)
