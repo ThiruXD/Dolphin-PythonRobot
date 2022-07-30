@@ -1,4 +1,4 @@
-from telegram.ext import Dispatcher
+from Dolphin_bot import Dispatcher
 
 from . import stop
 from . import button_stop
