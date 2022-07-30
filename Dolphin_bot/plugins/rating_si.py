@@ -1,4 +1,4 @@
-from kelime_bot import rating
+from Dolphin_bot import rating
 from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
@@ -7,7 +7,7 @@ from pyrogram.types import Message
 @Client.on_message(filters.command("skor"))
 async def ratingsa(c:Client, m:Message):
     global rating
-    metin = """📝 Küresel Grup Derecelendirmesi :
+    metin = """📝 Gʟᴏʙᴀʟ  Gʀᴏᴜᴘ  Rᴀᴛɪɴɢ ✨ :
 
 """
     eklenen = 0
