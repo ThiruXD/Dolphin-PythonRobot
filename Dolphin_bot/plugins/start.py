@@ -103,4 +103,9 @@ async def kelimeoyun(c:Client, m:Message):
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
         """
         await c.send_message(m.chat.id, text)
+
+start_handler = CommandHandler("start", start)
+
+dispatcher.add_handler(start_handler)
+
         
