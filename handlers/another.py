@@ -19,7 +19,10 @@ def callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="I want to be a Leader", callback_data="host")
+                    InlineKeyboardButton(text="English", callback_data="next")
+                 ],
+                 [
+                    InlineKeyboardButton(text="Tamil", callback_data="view")
                  ]
                 ]
             ),
