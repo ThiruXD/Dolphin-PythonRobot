@@ -38,10 +38,10 @@ HELP = """
   /points  -  Cᴏᴍᴘᴇᴛɪᴛɪᴠᴇ  Iɴғᴏʀᴍᴀᴛɪᴏɴ  Bᴇᴛᴡᴇᴇɴ  Pʟᴀʏᴇʀs.
 
 
-/game - Kelime Türet oyunu başlatır.. 
-/pass - kelimeyi Pass geçer.
-/skor - Oyuncular arasındaki rekabet bilgisi..
-/cancel kelime türet oyununu bitirir.
+/game  -  Gᴇɴᴇʀᴀᴛᴇ  Wᴏʀᴅ  Sᴛᴀʀᴛs  Tʜᴇ  Gᴀᴍᴇ.
+  /pass  -  Pᴀss  Tʜᴇ  Wᴏʀᴅ.
+  /score  -  Cᴏᴍᴘᴇᴛɪᴛɪᴠᴇ  Iɴғᴏʀᴍᴀᴛɪᴏɴ  Bᴇᴛᴡᴇᴇɴ  Pʟᴀʏᴇʀs.
+  /cancel  -  Eɴᴅs  Tʜᴇ  Wᴏʀᴅ  Dᴇʀɪᴠᴀᴛɪᴏɴ  Gᴀᴍᴇ.
 """
 
 # Komutlar. 
