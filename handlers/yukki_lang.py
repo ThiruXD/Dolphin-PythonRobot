@@ -28,14 +28,13 @@ def lanuages_keyboard(_):
     return keyboard
 
 
-LANGUAGE_COMMAND = get_command("LANGUAGE_COMMAND")
+handler = CallbackQueryHandler(callback, pattern='yukki_lang')
 
 
 @app.on_message(
-    filters.command(LANGUAGE_COMMAND)
+    filters.command(yukki_lang)
     & filters.group
     & ~filters.edited
-    & ~BANNED_USERS
 )
 
 @ActualAdminCB
