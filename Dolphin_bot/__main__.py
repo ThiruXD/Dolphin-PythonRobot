@@ -9,7 +9,7 @@ updater = Updater(
         parse_mode='HTML',
         disable_web_page_preview=True,
         quote=False,
-        run_async=True))
+        run_async=True)
 
 dp = updater.dispatcher
 
