@@ -1,26 +1,20 @@
-from pyrogram import Client
-from pyrogram import filters
-from random import shuffle
-from Dolphin_bot import USERNAME
-from pyrogram.types import Message
-from Dolphin_bot.helpers.keyboards import *
-from Dolphin_bot.helpers.kelimeler import kelime_sec
-from Dolphin_bot import *
+from telegram import Update
+from telegram.ext import CallbackContext
+from telegram.ext import CommandHandler
+
+from helpers.game import end_game
+from helpers.wrappers import admin_only
 
 
+@admin_only
+def callback(update: Update, context: CallbackContext):
+    try:
+        end_game(context)
+        update.effective_message.reply_text(
+            f'{update.effective_user.mention_html()} The Game Is Stopped.🔴 /Start@DolphinGameBot, You Can Start a New Game By Pressing The Button.',
+        )
+    except Exception as e:
+        update.effective_message.reply_text(f'Error: {e}')
 
-@Client.on_message(filters.command("cancel") & ~filters.private & ~filters.channel)
-async def stop(c:Client, m:Message):
-    global oyun
-    
-    siralama = []
-    for i in oyun[m.chat.id]["oyuncular"]:
-        siralama.append(f"{i}   :   {oyun[m.chat.id]['oyuncular'][i]} Bal")
-    siralama.sort(reverse=True)
-    siralama_text = ""
-    for i in siralama:
-        siralama_text += i + "\n"     
-    
-    await c.send_message(m.chat.id, f"**{m.from_user.mention}** Gᴀᴍᴇ Fɪɴɪsʜᴇᴅ Bʏ\n\nYᴏᴜ Cᴀɴ Tʏᴘᴇ /game Tᴏ Sᴛᴀʀᴛ A Nᴇᴡ Gᴀᴍᴇ\n\n 📝 Sᴄᴏʀᴇ Lɪsᴛ  :\n\n{siralama_text}")
-    oyun[m.chat.id] = {}
-    
+
+handler = CommandHandler('stop', callback)
