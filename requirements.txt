@@ -1,5 +1,6 @@
 dnspython
 pymongo
 pykeyboard
+pyyaml==5.3.1
 python-dotenv
 python-telegram-bot
