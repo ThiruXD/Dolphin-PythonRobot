@@ -4,13 +4,6 @@ from telegram.ext.utils.database import (get_lang, is_commanddelete_on,
                                        is_maintenance)
 
 
-def language(mystic):
-    async def wrapper(_, message, **kwargs):
-        if await is_maintenance() is False:
-            if message.from_user.id not in SUDOERS:
-                return await message.reply_text(
-                    "Bot is under maintenance. Please wait for some time..."
-                )
         if await is_commanddelete_on(message.chat.id):
             try:
                 await message.delete()
