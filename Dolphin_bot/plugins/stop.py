@@ -1,11 +1,11 @@
 from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
-from kelime_bot import USERNAME
+from Dolphin_bot import USERNAME
 from pyrogram.types import Message
-from kelime_bot.helpers.keyboards import *
-from kelime_bot.helpers.kelimeler import kelime_sec
-from kelime_bot import *
+from Dolphin_bot.helpers.keyboards import *
+from Dolphin_bot.helpers.kelimeler import kelime_sec
+from Dolphin_bot import *
 
 
 
