@@ -18,6 +18,7 @@ def callback(update: Update, context: CallbackContext):
     db.update(update.effective_chat.id, update.effective_chat.title)
     update.effective_message.reply_text(
         f'{update.effective_user.mention_html()} talks about a word.',
+        parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
