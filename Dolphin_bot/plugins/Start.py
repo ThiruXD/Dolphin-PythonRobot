@@ -102,8 +102,6 @@ async def kelimeoyun(c:Client, m:Message):
         """
         await c.send_message(m.chat.id, text)
 
-start_handler = CommandHandler("start", start)
 
-dispatcher.add_handler(start_handler)
 
         
