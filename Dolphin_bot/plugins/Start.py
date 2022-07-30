@@ -59,7 +59,6 @@ async def start(bot, message):
                photo=random.choice(HMF_IMG),
                 caption=PM_START_TEXT.format(m.from_user.mention),                   
                 reply_markup=InlineKeyboardMarkup(buttons).
-                 parse_mode=ParseMode.MARKDOWN,
      )
 
 @Client.on_message(filters.command("help"))
