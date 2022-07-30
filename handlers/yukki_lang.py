@@ -4,7 +4,7 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
-from strings import get_command, get_string
+from telegram.ext import get_command, get_string
 from telegram.ext import CallbackQueryHandler
 from telegram.ext import app
 from telegram.ext.mongo import get_lang, set_lang
