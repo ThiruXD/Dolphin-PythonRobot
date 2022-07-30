@@ -1,6 +1,6 @@
 import random
+from pyrogram.types import *
 from pyrogram import Client
-from telegram import Update
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
@@ -54,7 +54,7 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-             update.effective_message.reply_photo(
+             await m.reply_photo(
                photo=random.choice(HMF_IMG),
                 caption=PM_START_TEXT.format(m.from_user.mention),                   
                 reply_markup=InlineKeyboardMarkup(buttons))
