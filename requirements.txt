@@ -1,4 +1,5 @@
 dnspython
 pymongo
+pykeyboard
 python-dotenv
 python-telegram-bot
