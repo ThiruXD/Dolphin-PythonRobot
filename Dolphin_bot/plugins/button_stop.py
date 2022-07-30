@@ -1,9 +1,9 @@
 from telegram import Update
 from telegram import InlineKeyboardButton
 from telegram import InlineKeyboardMarkup
-from telegram.ext import CallbackContext
-from telegram.ext import CommandHandler
-from telegram.ext import CallbackQueryHandler
+from Dolphin_bot import CallbackContext
+from Dolphin_bot import CommandHandler
+from Dolphin_bot import CallbackQueryHandler
 
 from helpers.game import end_game
 from helpers.wrappers import admin_only
