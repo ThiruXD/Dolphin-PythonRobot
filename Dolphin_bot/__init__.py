@@ -20,6 +20,8 @@ API_HASH = getenv("API_HASH")
 TOKEN = getenv("TOKEN")
 USERNAME = getenv("USERNAME")
 OWNER_ID = getenv("OWNER_ID", "")
+MONGO_URI = getenv('MONGO_URI')
+SUDO_USERS = list(map(int, getenv('SUDO_USERS').split()))
 
 if OWNER_ID and len(OWNER_ID) and OWNER_ID.isdigit():
     OWNER_ID = int(OWNER_ID)  # type: ignore
