@@ -53,7 +53,7 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-                update.effective_message.reply_photo(
+              update.effective_message.reply_photo(
                 random.choice(HMF),
                 PM_START_TEXT.format(                      
                 reply_markup=InlineKeyboardMarkup(buttons),
