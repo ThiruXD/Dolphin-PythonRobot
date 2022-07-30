@@ -4,7 +4,7 @@ from telegram import Update
 from Dolphin_bot import CallbackContext
 from Dolphin_bot import CommandHandler
 from Dolphin_bot import Filters
-
+from Dolphin_bot import CallbackQueryHandler
 import mongo.chats as db
 from helpers.game import new_game
 from helpers.game import end_game
@@ -39,8 +39,8 @@ def callback(update: Update, context: CallbackContext):
                  ],
                  [
                     InlineKeyboardButton(
-                        'Settings',
-                        callback_data='settings',
+                        'language',
+                        callback_data='yukki_lang',
                     ),
                 ],
             ],
@@ -48,4 +48,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-handler = CommandHandler('host_1', callback, Filters.chat_type.groups)
+handler = CallbackQueryHandler(callback, pattern='paraphrase')
