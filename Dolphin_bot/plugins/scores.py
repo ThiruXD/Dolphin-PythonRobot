@@ -1,5 +1,5 @@
 from telegram import Update
-from telegram.ext import CommandHandler
+from Dolphin_bot import CommandHandler
 
 from helpers.wrappers import nice_errors
 from mongo import users
