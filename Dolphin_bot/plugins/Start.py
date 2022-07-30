@@ -54,7 +54,7 @@ HELP = """
 
 # Komutlar. 
 @Client.on_message(filters.command("start"))
-async def start(bot, message):
+async def start(_, m):
              await m.reply_photo(
                photo=random.choice(HMF_IMG),
                 caption=PM_START_TEXT.format(m.from_user.mention),                   
@@ -102,7 +102,7 @@ async def kelimeoyun(c:Client, m:Message):
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
         """
-        await c.send_message(m.chat.id, text)
+        await c.send_message(m.chat.id, text) 
 
 
 
