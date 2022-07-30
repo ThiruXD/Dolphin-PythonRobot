@@ -7,8 +7,8 @@ from pyrogram.types import InlineKeyboardButton, Message
 from config import BANNED_USERS
 from strings import get_command, get_string
 from telegram.ext import app
-from telegram.ext.utils.database import get_lang, set_lang
-from telegram.ext.utils.decorators import (ActualAdminCB, language,
+from telegram.ext.mongo import get_lang, set_lang
+from telegram.ext.mongo import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
