@@ -32,10 +32,10 @@ START = """
 """
 
 HELP = """
-**✌️ Komutlar Menüsüne Hoşgeldiniz.**
-/bulmaca - Kelime Anlatma Oyunu Başlatır.
-/ogretmen - Kelime Anlatma Oyununda Ogretmen Olma.. 
-/puan - Oyuncular arasındaki rekabet bilgisi..
+**✌️  Wᴇʟᴄᴏᴍᴇ  Tᴏ  Cᴏᴍᴍᴀɴᴅs  Mᴇɴᴜ.**
+  /puzzle  -  Wᴏʀᴅ  Exᴘʀᴇssɪᴏɴ  Sᴛᴀʀᴛs  Tʜᴇ  Gᴀᴍᴇ.
+  /teacher  -  Bᴇɪɴɢ  A  Tᴇᴀᴄʜᴇʀ  Iɴ  Wᴏʀᴅ  Exᴘʀᴇssɪᴏɴ  Gᴀᴍᴇ..
+  /points  -  Cᴏᴍᴘᴇᴛɪᴛɪᴠᴇ  Iɴғᴏʀᴍᴀᴛɪᴏɴ  Bᴇᴛᴡᴇᴇɴ  Pʟᴀʏᴇʀs.
 
 
 /game - Kelime Türet oyunu başlatır.. 
