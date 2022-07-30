@@ -47,4 +47,4 @@ async def passs(c:Client, m:Message):
         else:
             await c.send_message(m.chat.id, f"<code>**❗  Pᴀss  Sᴀᴠᴇᴅ  Cᴏʀʀᴇᴄᴛʟʏ! </code> \n  Yᴏᴜ  Cᴀɴ  Tʏᴘᴇ  /cancel  Tᴏ  Sᴛᴏᴘ  Tʜᴇ  Gᴀᴍᴇ ✍🏻**")
     else:
-        await m.reply(f"❗ **Grubumuzda aktif oyun bulunmamaktadır!\n Yeni bir oyuna başlamak için /game yazabilirsiniz✍🏻**")
+        await m.reply(f"❗ **Tʜᴇʀᴇ  Aʀᴇ  Nᴏ  Aᴄᴛɪᴠᴇ  Gᴀᴍᴇs  Iɴ  Oᴜʀ  Gʀᴏᴜᴘ! 😅 \n  Yᴏᴜ  Cᴀɴ  Tʏᴘᴇ  /game  Tᴏ  Sᴛᴀʀᴛ  A  Nᴇᴡ  Gᴀᴍᴇ ✍🏻**")
