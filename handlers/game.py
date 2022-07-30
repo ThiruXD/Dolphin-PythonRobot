@@ -22,7 +22,7 @@ def callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         '✍  Wᴏʀᴅ  Pᴀʀᴀᴘʜʀᴀsᴇ',
-                        callback_data='view',
+                        callback_data='paraphrase',
                     ),
                 ],
                 [
