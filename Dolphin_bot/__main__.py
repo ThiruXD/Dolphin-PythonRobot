@@ -7,7 +7,7 @@ from config import TOKEN
 from config import SUDO_USERS
 
 updater = Updater(
-    token=BOT_TOKEN,
+    token=TOKEN,
     defaults=Defaults(
         parse_mode=ParseMode.MARKDOWN,
         disable_web_page_preview=True,
