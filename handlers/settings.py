@@ -10,9 +10,10 @@ from helpers.game import get_game
 from helpers.game import is_true
 
 def callback(update: Update, context: CallbackContext):
-    new_game(update.effective_user, context)
-     update.effective_message.reply_text(
-        f'{update.effective_user.mention_html()} talks about a word.',
+    if game['host'].id != update.effective_user.id:
+            if is_true(update.effective_message.text, context):
+              update.effective_message.reply_text(
+                  f'{update.effective_user.mention_html()} choose your Question Launguage.',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -31,4 +32,4 @@ def callback(update: Update, context: CallbackContext):
         ),
     )
 
-   handler = CallbackQueryHandler(callback, pattern='settings')
+   handler = CallbackQueryHandler(callback, pattern='language')
