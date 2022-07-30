@@ -1,22 +1,22 @@
-from telegram import InlineKeyboardButton
-from telegram import InlineKeyboardMarkup
 from telegram import Update
 from telegram.ext import CallbackContext
-from telegram.ext import Filters
-from telegram.ext import CommandHandler
 from telegram.ext import CallbackQueryHandler
-from telegram.ext import MessageHandler
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 
-import mongo.users as db
 from helpers.game import get_game
-from helpers.game import is_true
+from helpers.wrappers import nice_errors
 
+
+@nice_errors
 def callback(update: Update, context: CallbackContext):
-    if game['host'].id != update.effective_user.id:
-            if is_true(update.effective_message.text, context):
-              update.effective_message.reply_text(
-                  f'{update.effective_user.mention_html()} choose your Question Launguage.',
-        reply_markup=InlineKeyboardMarkup(
+    game = get_game(context)
+    query = update.callback_query
+    if game['host'].id == update.effective_user.id:
+        query.message.edit_text(
+            text=f"""{update.effective_user.mention_html()} refused to lead! .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
@@ -34,5 +34,8 @@ def callback(update: Update, context: CallbackContext):
         ),
     )
 
-  handler = CallbackQueryHandler(callback, pattern='multilanguage')
+
+
+handler = CallbackQueryHandler(callback, pattern='multilanguage')
+
 
