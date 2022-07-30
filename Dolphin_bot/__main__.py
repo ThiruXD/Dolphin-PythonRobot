@@ -3,11 +3,11 @@ from Dolphin_bot import Defaults
 from Dolphin_bot import Updater
 from Dolphin_bot import ParseMode
 
-from config import TOKEN
+from config import BOT_TOKEN
 from config import SUDO_USERS
 
 updater = Updater(
-    token=TOKEN,
+    token=BOT_TOKEN,
     defaults=Defaults(
         parse_mode=ParseMode.MARKDOWN,
         disable_web_page_preview=True,
@@ -20,7 +20,7 @@ dp = updater.dispatcher
 
 
 if __name__ == "__main__":
-   import os
+    import os
     import sys
     from threading import Thread
     from threading import Thread 
