@@ -1,6 +1,5 @@
 from telegram.ext import Defaults
 from telegram.ext import Updater
-from telegram.ext import ParseMode
 
 from config import BOT_TOKEN
 from config import SUDO_USERS
@@ -8,7 +7,7 @@ from config import SUDO_USERS
 updater = Updater(
     token=BOT_TOKEN,
     defaults=Defaults(
-        parse_mode=ParseMode.MARKDOWN,
+        parse_mode='HTML',
         disable_web_page_preview=True,
         quote=False,
         run_async=True,
