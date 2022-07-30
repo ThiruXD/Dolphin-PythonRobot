@@ -1,7 +1,7 @@
 from typing import Callable
 
 from telegram import Update
-from telegram.ext import CallbackContext
+from Dolphin_bot import CallbackContext
 
 
 def admin_only(handler: Callable):
