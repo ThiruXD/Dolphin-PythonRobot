@@ -1,6 +1,5 @@
 import random
 from pyrogram import Client
-from pyrogram import ParseMode
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
