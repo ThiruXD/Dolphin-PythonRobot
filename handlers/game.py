@@ -2,6 +2,7 @@ from telegram import InlineKeyboardButton
 from telegram import InlineKeyboardMarkup
 from telegram import Update
 from telegram.ext import CallbackContext
+from telegram.ext import CallbackQueryHandler
 from telegram.ext import CommandHandler
 from telegram.ext import Filters
 
@@ -36,4 +37,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-  handler = CommandHandler('game', callback)
+  handler = CallbackQueryHandler(callback, pattern='game')
