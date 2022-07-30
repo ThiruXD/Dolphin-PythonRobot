@@ -1,4 +1,4 @@
-from telegram.ext import Filters
+from Dolphin_bot import Filters
 
 from config import SUDO_USERS
 
