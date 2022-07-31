@@ -41,7 +41,7 @@ async def passs(c:Client, m:Message):
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} 
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
-            """
+            """, reply_markup=PASS_BUTTON)
             await c.send_message(m.chat.id, text)
             
         else:
