@@ -1,7 +1,6 @@
 from telegram import Client
 from telegram import filters
 from random import shuffle
-from pyrogram.types import Message
 from telegram.ext import oyun
 from telegram.ext.helpers.kelimeler import *
 from telegram.ext.helpers.keyboards import *
