@@ -1,5 +1,6 @@
 from pyrogram import Client
 from pyrogram import filters
+from pyrogram import CallbackQuery
 from random import shuffle
 from pyrogram.types import Message
 from pyrogram import __version__ as pyro
