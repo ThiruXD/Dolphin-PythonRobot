@@ -17,7 +17,8 @@ from helpers.wrappers import nice_errors
 @nice_errors
 def callback(update: Update, context: CallbackContext):
     new_game(update.effective_user, context)
-async def kelimeoyun(c:Client, m:Message):
+    db.update(update.effective_chat.id, update.effective_chat.title)
+ async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
     try:
