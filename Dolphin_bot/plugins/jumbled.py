@@ -57,3 +57,6 @@ async def kelimeoyun(c:Client, m:Message):
         """
         await c.send_message(m.chat.id, text) 
 
+  jumbled_callback_handler = CallbackQueryHandler(
+  
+  dispatcher.add_handler(jumbled_callback_handler)
