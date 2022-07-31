@@ -9,7 +9,7 @@ from helpers.game import end_game
 from helpers.wrappers import admin_only
 
 
-@admin_only
+@nice_errors
 def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
