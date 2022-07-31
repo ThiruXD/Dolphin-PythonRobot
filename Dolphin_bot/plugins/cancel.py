@@ -10,7 +10,7 @@ from Dolphin_bot import *
 
 
 @Client.on_message(filters.command("cancel") & ~filters.private & ~filters.channel)
-async def stop(c:Client, m:Message):
+async def cancel(c:Client, m:Message):
     global oyun
     
     siralama = []
