@@ -9,7 +9,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
-@Client.on_message(filters.command("game")) 
+@Client.on_message(filters.command("bgame")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
