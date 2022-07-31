@@ -30,7 +30,7 @@ buttons = [
 
 
 # Komutlar. 
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("game"))
 async def start(_, m):
              await m.reply_photo(
                photo=random.choice(GAM_IMG),
