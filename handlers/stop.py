@@ -17,4 +17,4 @@ def callback(update: Update, context: CallbackContext):
         update.effective_message.reply_text(f'Error: {e}')
 
 
-handler = CommandHandler('stop', callback)
+handler = CommandHandler('cancel', callback)
