@@ -1,4 +1,5 @@
 from pyrogram import Client
+from pyrogram import CallbackQuery
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
