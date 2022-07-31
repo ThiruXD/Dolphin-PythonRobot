@@ -1,8 +1,9 @@
 from pyrogram import Client
-from pyrogram import CallbackQuery
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
+from pyrogram import __version__ as pyro
+from pyrogram.types import *
 from Dolphin_bot import oyun
 from Dolphin_bot.helpers.kelimeler import *
 from Dolphin_bot.helpers.keyboards import *
@@ -10,8 +11,8 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 # Oyunu başlat. 
-@Client.on_callback_query(filters.regex("jgame"))
-async def kelimeoyun(c:Client, m:Message):
+@bot.on_callback_query(filters.regex("jumbled"))
+async def helpback(_, query: CallbackQuery):
     global oyun
     aktif = False
     try:
