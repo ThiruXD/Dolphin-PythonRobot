@@ -6,7 +6,7 @@ from telegram.ext import CommandHandler
 from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
-from helpers.wrappers import admin_only
+from helpers.wrappers import nice_errors
 
 
 @nice_errors
