@@ -18,7 +18,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 # Oyunu başlat. 
-@Client.on_callback_query(filters.regex("jumbled"))
+@Client.on_message(filters.command("jgame"))
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
@@ -57,4 +57,4 @@ async def kelimeoyun(c:Client, m:Message):
         """
         await c.send_message(m.chat.id, text) 
   
-  dispatcher.add_handler(jumbled_callback_handler)
+  
