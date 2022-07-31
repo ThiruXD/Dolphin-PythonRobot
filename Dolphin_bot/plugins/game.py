@@ -13,7 +13,6 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 GAM_IMG = (
-      "https://telegra.ph/file/9332b113ddb8555bf6ffe.jpg",
       "https://telegra.ph/file/357a3279b2960dd79a549.jpg",
   )
 
@@ -26,7 +25,7 @@ buttons = [
         InlineKeyboardButton("✍  Wᴏʀᴅ  Pᴀʀᴀᴘʜʀᴀsᴇ", callback_data="paraphrase"),
     ],
     [
-        InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 🆎", callback_data="paraphrase"),
+        InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 🆎", callback_data="jgame"),
     ]
 ]
 
