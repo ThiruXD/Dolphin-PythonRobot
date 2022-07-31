@@ -11,7 +11,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 # Oyunu başlat. 
-@bot.on_callback_query(filters.regex("jumbled"))
+@Client.on_callback_query(filters.regex("jumbled"))
 async def helpback(_, query: CallbackQuery):
     global oyun
     aktif = False
