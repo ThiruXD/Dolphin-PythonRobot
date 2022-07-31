@@ -25,7 +25,7 @@ buttons = [
         InlineKeyboardButton("✍  Wᴏʀᴅ  Pᴀʀᴀᴘʜʀᴀsᴇ", callback_data="paraphrase"),
     ],
     [
-        InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 🆎", callback_data="jgame"),
+        InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 🆎", callback_data="jumbled"),
     ]
 ]
 
