@@ -9,7 +9,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
-@Client.on_callback_query(filters.regex(r"help_(.*?)"))
+@Client.on_callback_query(filters.regex(r"jumbled_button"))
 async def kelimeoyun(client, query):
     global oyun
     aktif = False
