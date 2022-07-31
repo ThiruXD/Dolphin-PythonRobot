@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
 @Client.on_callback_query(filters.regex(r"jumbled_button"))
-async def kelimeoyun(client, query):
+async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
     try:
