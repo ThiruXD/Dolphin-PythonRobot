@@ -28,11 +28,6 @@ async def kelimeoyun(c:Client, m:Message):
         aktif = False
 
     if aktif:
-
-      await m.reply("**❗Tʜᴇ  Gᴀᴍᴇ  Is  Aʟʀᴇᴀᴅʏ  Iɴ  Pʀᴏɢʀᴇss  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ  ✍🏻  \n  Tᴏ  Sᴛᴏᴘ  Tʜᴇ  Gᴀᴍᴇ,  Yᴏᴜ  Cᴀɴ  Tʏᴘᴇ  /cancel")
-    else:
-        await m.reply(f"**Bʏ!    \n Tʜᴇ  Wᴏʀᴅ  Fɪɴᴅɪɴɢ  Gᴀᴍᴇ  Hᴀs  Sᴛᴀʀᴛᴇᴅ.\n \n Gᴏᴏᴅ  Lᴜᴄᴋ !", reply_markup=kanal)
-
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
         oyun[m.chat.id]["round"] = 1
