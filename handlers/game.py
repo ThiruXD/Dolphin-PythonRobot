@@ -1,37 +1,45 @@
-from telegram import InlineKeyboardButton
-from telegram import InlineKeyboardMarkup
-from telegram import Update
-from telegram.ext import CallbackContext
-from telegram.ext import CallbackQueryHandler
-from telegram.ext import CommandHandler
-from telegram.ext import Filters
 
-import mongo.chats as db
-from helpers.wrappers import nice_errors
+import random
+from pyrogram.types import *
+from pyrogram import __version__ as pyro
+from pyrogram import Client
+from pyrogram import filters
+from random import shuffle
+from pyrogram.types import Message
+from Dolphin_bot import oyun
+from Dolphin_bot.helpers.kelimeler import *
+from Dolphin_bot.helpers.keyboards import *
+from pyrogram.errors import FloodWait
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-
-@nice_errors
-def callback(update: Update, context: CallbackContext):
-    db.update(update.effective_chat.id, update.effective_chat.title)
-    update.effective_message.reply_text(
-        f'{update.effective_user.mention_html()} Choose Your Game.',
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        '✍  Wᴏʀᴅ  Pᴀʀᴀᴘʜʀᴀsᴇ',
-                        callback_data='paraphrase',
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        'Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 🆎',
-                        callback_data='bgame',
-                    ),
-                ],
-            ],
-        ),
-    )
+GAM_IMG = (
+      "https://telegra.ph/file/9332b113ddb8555bf6ffe.jpg",
+      "https://telegra.ph/file/357a3279b2960dd79a549.jpg",
+  )
 
 
-  handler = CommandHandler('game', callback)
+GAME_TEXT = """
+** ➤  Eɴᴊᴏʏ  Wɪᴛʜ  Yᴏᴜʀ  Fʀɪᴇɴᴅs ✨..**
+"""
+buttons = [
+    [
+        InlineKeyboardButton("✍  Wᴏʀᴅ  Pᴀʀᴀᴘʜʀᴀsᴇ", callback_data="paraphrase"),
+        InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 🆎", callback_data="paraphrase"),
+    ]
+]
+
+
+# Komutlar. 
+@Client.on_message(filters.command("start"))
+async def start(_, m):
+             await m.reply_photo(
+               photo=random.choice(GAM_IMG),
+                caption=GAME_TEXT.format(m.from_user.mention),                   
+                reply_markup=InlineKeyboardMarkup(buttons))
+
+
+ 
+
+
+
+        
