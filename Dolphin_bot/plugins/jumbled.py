@@ -1,6 +1,12 @@
 from pyrogram import Client
 from pyrogram import filters
-from pyrogram import CallbackQuery
+from pyrogram.types import (
+    CallbackQuery,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    InputMediaPhoto,
+    Message,
+)
 from random import shuffle
 from pyrogram.types import Message
 from pyrogram import __version__ as pyro
