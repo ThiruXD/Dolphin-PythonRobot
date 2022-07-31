@@ -1,12 +1,5 @@
 from pyrogram import Client
 from pyrogram import filters
-from pyrogram.types import (
-    CallbackQuery,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    InputMediaPhoto,
-    Message,
-)
 from random import shuffle
 from pyrogram.types import Message
 from pyrogram import __version__ as pyro
@@ -18,7 +11,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 # Oyunu başlat. 
-@Client.on_message(filters.command("jgame"))
+@Client.on_message(filters.command("jumgame"))
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
