@@ -9,7 +9,6 @@ from pyrogram.types import (
 )
 from random import shuffle
 from pyrogram.types import Message
-from pyrogram import version as pyro
 from pyrogram.types import *
 from Dolphin_bot import oyun
 from Dolphin_bot.helpers.kelimeler import *
