@@ -17,7 +17,7 @@ def callback(update: Update, context: CallbackContext):
     new_game(update.effective_user, context)
     db.update(update.effective_chat.id, update.effective_chat.title)
     update.effective_message.reply_text(
-        f'{update.effective_user.mention_html()}  Is  Exᴘʟᴀɪɴɪɴɢ  Tʜᴇ  Wᴏʀᴅ  !  🍬',
+        f'{update.effective_user.mention_html()}  **Is  Exᴘʟᴀɪɴɪɴɢ  Tʜᴇ  Wᴏʀᴅ**  !  🍬',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
