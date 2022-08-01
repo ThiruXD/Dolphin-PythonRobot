@@ -13,10 +13,10 @@ def callback(update: Update, _):
         update.effective_user.id,
     ) if (
         update.effective_chat.type == 'supergroup'
-    ) else '<code>not in group</code>'
+    ) else '<code>Nᴏᴛ  Iɴ  Gʀᴏᴜᴘ</code>'
 
     update.effective_message.reply_text(
-        f'Your total scores: {total_scores}\nYour scores in this chat: {scores_in_chat}',
+        f'Yᴏᴜʀ  Tᴏᴛᴀʟ  Sᴄᴏʀᴇs: {total_scores}\nYᴏᴜʀ  Sᴄᴏʀᴇs  Iɴ  Tʜɪs  Cʜᴀᴛ: {scores_in_chat}',
     )
 
 
