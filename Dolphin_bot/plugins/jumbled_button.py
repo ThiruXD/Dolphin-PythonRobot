@@ -1,13 +1,6 @@
 from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-)
 from pyrogram.types import Message
 from Dolphin_bot import oyun
 from Dolphin_bot.helpers.kelimeler import *
@@ -51,5 +44,4 @@ async def jumbled_button(c:Client, m:Message):
         """
         await c.send_message(m.chat.id, text)
 
- dispatcher.add_handler(jumbled_callback_handler)
 
