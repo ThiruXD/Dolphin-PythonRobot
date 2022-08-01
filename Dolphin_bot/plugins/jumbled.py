@@ -9,6 +9,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
+# Oyunu başlat. 
 @Client.on_message(filters.command("bgame")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
@@ -36,14 +37,15 @@ async def kelimeoyun(c:Client, m:Message):
         
         for harf in kelime:
             kelime_list+= harf + " "
- 
+        
         text = f"""
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
 💰 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
 🔎 I𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} 
+
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
         """
-     await c.send_message(m.chat.id, text)
-
+        await c.send_message(m.chat.id, text)
+        
