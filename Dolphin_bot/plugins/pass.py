@@ -8,7 +8,7 @@ from Dolphin_bot import *
 
 
 
-@app.on_callback_query(filters.regex("pass_button") & ~filters.private & ~filters.channel)
+@Client.on_callback_query(filters.regex("pass_button") & ~filters.private & ~filters.channel)
 async def passs(c:Client, m:Message):
     global oyun
     
