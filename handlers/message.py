@@ -17,7 +17,7 @@ def callback(update: Update, context: CallbackContext):
         if game['host'].id != update.effective_user.id:
             if is_true(update.effective_message.text, context):
                 update.effective_message.reply_text(
-                    f"{update.effective_user.mention_html()} Gᴜᴇssᴇᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  ✨, {game['word']}.",
+                    f"{update.effective_user.mention_html()} **Gᴜᴇssᴇᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ**  ✨, {game['word']}.",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
