@@ -14,12 +14,12 @@ def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
         update.effective_message.reply_text(
-            f'{update.effective_user.mention_html()} refused to lead!.',
+            f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ  ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton(
-                                    'I want to be the host',
+                                    'I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁',
                                     callback_data='host',
                                 ),
                             ],
