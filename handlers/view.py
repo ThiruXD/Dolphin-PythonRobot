@@ -13,7 +13,7 @@ def callback(update: Update, context: CallbackContext):
     if game['host'].id == update.effective_user.id:
         update.callback_query.answer(game['word'], True)
     else:
-        update.callback_query.answer('This is not for you.', True)
+        update.callback_query.answer('Hᴏsᴛᴇʀ  Oɴʟʏ  Cᴀɴ  Sᴇᴇ  Tʜᴇ  Wᴏʀᴅ  !  😑', True)
 
 
 handler = CallbackQueryHandler(callback, pattern='view')
