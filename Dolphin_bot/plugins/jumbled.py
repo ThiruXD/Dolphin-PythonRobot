@@ -55,7 +55,7 @@ async def kelimeoyun(c:Client, m:Message):
                     ],
                 ]
             )
-      await c.send_message(m.chat.id, text, parse_mode="markdown", reply_markup=abutton,)
+      await c.send_message(m.chat.id, caption=text, parse_mode="markdown", reply_markup=abutton,)
 
 
         
