@@ -38,7 +38,7 @@ async def kelimeoyun(c:Client, m:Message):
             kelime_list+= harf + " "
         
 
-      text = f"""
+                text = f"""
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
 📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
