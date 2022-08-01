@@ -14,12 +14,12 @@ def callback(update: Update, context: CallbackContext):
     new_game(update.effective_user, context)
 
     update.effective_message.reply_text(
-        f'{update.effective_user.mention_html()} talks about a word.',
+        f'{update.effective_user.mention_html()} Is  Exᴘʟᴀɪɴɪɴɢ  Tʜᴇ  Wᴏʀᴅ  !  🍬.',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        'View',
+                        'Sᴇᴇ  Wᴏʀᴅ  👀',
                         callback_data='view',
                     ),
                 ],
