@@ -25,20 +25,14 @@ def callback(update: Update, context: CallbackContext):
                 ],
                 [
                     InlineKeyboardButton(
-                        'Next',
-                        callback_data='next',
-                    ),
+                        text='❮ Nᴇxᴛ Wᴏʀᴅ', callback_data='next'),
+                    InlineKeyboardButton(
+                        text='Nᴇxᴛ Wᴏʀᴅ ❯', callback_data='next'),
                 ],
                 [
                     InlineKeyboardButton(
                         'I Change My Mind',
                         callback_data='button_stop',
-                     ),
-                 ],
-                 [
-                    InlineKeyboardButton(
-                        'language',
-                        callback_data='another',
                     ),
                 ],
             ],
