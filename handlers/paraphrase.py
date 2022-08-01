@@ -22,26 +22,20 @@ def callback(update: Update, context: CallbackContext):
             [
                 [
                     InlineKeyboardButton(
-                        'View',
+                        '👀 Sᴇᴇ  Wᴏʀᴅ 👀',
                         callback_data='view',
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        'Next',
-                        callback_data='next',
-                    ),
+                        text='❮ Nᴇxᴛ Wᴏʀᴅ', callback_data='next'),
+                    InlineKeyboardButton(
+                        text='Nᴇxᴛ Wᴏʀᴅ ❯', callback_data='next'),
                 ],
                 [
                     InlineKeyboardButton(
-                        'I Changed My Mind',
+                        '💀  I  Cʜᴀɴɢᴇᴅ  Mʏ  Mɪɴᴅ  💀',
                         callback_data='button_stop',
-                    ),
-                 ],
-                 [
-                    InlineKeyboardButton(
-                        'language',
-                        callback_data='yukki_lang',
                     ),
                 ],
             ],
