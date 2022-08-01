@@ -41,7 +41,7 @@ async def jumbled_button(c:Client, m:Message):
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} 
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
-        """
+        """ )
      
 
 
