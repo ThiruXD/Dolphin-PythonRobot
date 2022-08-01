@@ -51,6 +51,5 @@ async def jumbled_button(c:Client, m:Message):
         """
         await c.send_message(m.chat.id, text)
 
- jumbled_callback_handler = CallbackQueryHandler(jumbled_button)
  dispatcher.add_handler(jumbled_callback_handler)
 
