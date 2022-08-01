@@ -44,5 +44,7 @@ async def jumbled_button(c:Client, m:Message):
         """
 
         await c.send_message(m.chat.id, text_down)
+   else:
+        await c.send_message(m.chat.id, f"<code>**❗  Pᴀss  Sᴀᴠᴇᴅ  Cᴏʀʀᴇᴄᴛʟʏ! </code> \n  Yᴏᴜ  Cᴀɴ  Tʏᴘᴇ  /cancel  Tᴏ  Sᴛᴏᴘ  Tʜᴇ  Gᴀᴍᴇ ✍🏻**")
 
 
