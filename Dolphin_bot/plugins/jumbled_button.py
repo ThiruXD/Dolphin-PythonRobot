@@ -42,6 +42,6 @@ async def jumbled_button(c:Client, m:Message):
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
         """
-         await reply_text(text_round)
+         await reply_text(m.chat.id, text_round)
 
 
