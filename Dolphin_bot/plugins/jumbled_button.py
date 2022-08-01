@@ -42,6 +42,6 @@ async def jumbled_button(c:Client, m:Message):
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
         """
-        await m.edit_text(text)
+         m.edit_text(text)
 
 
