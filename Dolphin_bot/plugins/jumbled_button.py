@@ -33,7 +33,7 @@ async def jumbled_button(c:Client, m:Message):
         for harf in kelime:
             kelime_list+= harf + " "
         
-        await c.send_message(m.chat.id, f"""
+        text_down = f"""
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
 📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
@@ -41,7 +41,8 @@ async def jumbled_button(c:Client, m:Message):
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} 
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
-        """ )
-     
+        """
+
+        await c.send_message(m.chat.id, text_down)
 
 
