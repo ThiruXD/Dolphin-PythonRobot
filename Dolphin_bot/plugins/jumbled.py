@@ -55,8 +55,7 @@ async def kelimeoyun(c:Client, m:Message):
                     ],
                 ]
             )
-            await c.delete()
-            await c.send_message(
+            await c.send_caption(
                 m.chat.id,
                 caption=text,
                 parse_mode="markdown",
