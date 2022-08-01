@@ -19,7 +19,7 @@ def callback(update: Update, context: CallbackContext):
             [
                 [
                     InlineKeyboardButton(
-                        'Sᴇᴇ  Wᴏʀᴅ  👀',
+                        '👀 Sᴇᴇ  Wᴏʀᴅ 👀',
                         callback_data='view',
                     ),
                 ],
@@ -31,7 +31,7 @@ def callback(update: Update, context: CallbackContext):
                 ],
                 [
                     InlineKeyboardButton(
-                        'I Change My Mind',
+                        '💀  I  Cʜᴀɴɢᴇᴅ  Mʏ  Mɪɴᴅ  💀',
                         callback_data='button_stop',
                     ),
                 ],
