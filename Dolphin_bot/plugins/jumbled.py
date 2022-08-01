@@ -40,10 +40,10 @@ async def kelimeoyun(c:Client, m:Message):
         
         text = f"""
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
+💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
 📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
-💰 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
-🔎 I𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} 
+🎲 Cʟᴜᴇ : {oyun[m.chat.id]["kelime"][0]}
+✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)}
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 
         """
