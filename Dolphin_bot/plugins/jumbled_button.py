@@ -9,8 +9,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
-@Client.on_callback_query(filters.regex("jumbled_button"))
-async def jumbled_button(c:Client, m:Message):
+def jumbled_button(update: Update, context: CallbackContext):
     global oyun
     aktif = False
     try:
@@ -44,5 +43,6 @@ async def jumbled_button(c:Client, m:Message):
         """
         await c.send_message(m.chat.id, text)
 
-
+ jumbled_callback_handler = CallbackQueryHandler(jumbled_button, pattern=r"jumbled_buttons")
+ dispatcher.add_handler(jumbled_callback_handler)
 
