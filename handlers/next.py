@@ -15,7 +15,7 @@ def callback(update: Update, context: CallbackContext):
         word = next_word(context)
         update.callback_query.answer(word, show_alert=True)
     else:
-        update.callback_query.answer('This is not for you.', True)
+        update.callback_query.answer('Hᴏsᴛᴇʀ  Oɴʟʏ  Cᴀɴ  Sᴇᴇ  Tʜᴇ  Wᴏʀᴅ  !  😑', True)
 
 
 handler = CallbackQueryHandler(callback, pattern='next')
