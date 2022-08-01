@@ -17,7 +17,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 @Client.on_callback_query(filters.regex(r"jumbled_button"))
 async def jumbled_button(c:Client, m:Message):
-def jumbled_button(update: Update, context: CallbackContext):
+  def jumbled_button(update: Update, context: CallbackContext):
     global oyun
     aktif = False
     try:
