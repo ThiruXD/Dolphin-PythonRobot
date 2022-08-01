@@ -47,5 +47,19 @@ async def kelimeoyun(c:Client, m:Message):
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
         """
-        await c.send_message(m.chat.id, text)
+           button1 = InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="Pᴀss ♻️", callback_data="pass_button"
+                        ),
+                    ],
+                ]
+            )
+            await c.send_message(m.chat.id, text)
+                parse_mode="markdown",
+                reply_markup=button1,
+            )
+
+
         
