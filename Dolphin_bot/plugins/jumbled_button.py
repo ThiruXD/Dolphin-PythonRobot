@@ -10,14 +10,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 @Client.on_callback_query(filters.regex(r"jumbled_button"))
 async def jumbled_button(c:Client, m:Message):
-    global oyun
-    aktif = False
-    try:
-        aktif = oyun[m.chat.id]["aktif"]
-        aktif = True
-    except:
-        aktif = False
-
     if aktif:
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
