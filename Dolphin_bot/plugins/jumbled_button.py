@@ -10,7 +10,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 @Client.on_callback_query(filters.regex(r"jumbled_button"))
-async def jumbled_button(_, c:Client, query: message: Message):
+async def jumbled_button(c:Client, message: Message):
     global oyun
     aktif = False
     try:
