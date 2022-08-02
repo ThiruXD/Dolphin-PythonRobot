@@ -18,7 +18,7 @@ def callback(update: Update, context: CallbackContext):
     db.update(update.effective_chat.id, update.effective_chat.title)
     update.effective_message.reply_text(
         f"""{update.effective_user.mention_html()} 🎯 Rᴏᴜɴᴅ : {oyun[message.chat.id]['round']}/60 \n💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1 \n📝 Wᴏʀᴅ :   <code>{kelime_list}</code> \n🎲 Cʟᴜᴇ : {oyun[message.chat.id]["kelime"][0]} \n✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} \n✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs""",)
-        reply_markup=InlineKeyboardMarkup(
+        InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
