@@ -20,9 +20,9 @@ async def jumbled_button(_, query: CallbackQuery):
         aktif = False
 
     if aktif:
-        await query_edit_message_text("**❗Tʜᴇ  Gᴀᴍᴇ  Is  Aʟʀᴇᴀᴅʏ  Iɴ  Pʀᴏɢʀᴇss  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ  ✍🏻  \n  Tᴏ  Sᴛᴏᴘ  Tʜᴇ  Gᴀᴍᴇ,  Yᴏᴜ  Cᴀɴ  Tʏᴘᴇ  /cancel")
+        await message_reply("**❗Tʜᴇ  Gᴀᴍᴇ  Is  Aʟʀᴇᴀᴅʏ  Iɴ  Pʀᴏɢʀᴇss  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ  ✍🏻  \n  Tᴏ  Sᴛᴏᴘ  Tʜᴇ  Gᴀᴍᴇ,  Yᴏᴜ  Cᴀɴ  Tʏᴘᴇ  /cancel")
     else:
-        await query_edit_message_text(f"""🎯 Rᴏᴜɴᴅ : {oyun[message.chat.id]['round']}/60 \n💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1 \n📝 Wᴏʀᴅ :   <code>{kelime_list}</code> \n🎲 Cʟᴜᴇ : {oyun[message.chat.id]["kelime"][0]} \n✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} \n✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs""", reply_markup=kanal)
+        await message_reply(f"""🎯 Rᴏᴜɴᴅ : {oyun[message.chat.id]['round']}/60 \n💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1 \n📝 Wᴏʀᴅ :   <code>{kelime_list}</code> \n🎲 Cʟᴜᴇ : {oyun[message.chat.id]["kelime"][0]} \n✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} \n✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs""", reply_markup=kanal)
 
         oyun[message.chat.id] = {"kelime":kelime_sec()}
         oyun[message.chat.id]["aktif"] = True
