@@ -33,7 +33,7 @@ async def jumbled_button(c:Client, m:Message):
         for harf in kelime:
             kelime_list+= harf + " "
         
-                await query.edit_message_text(
+                await CallbackQuery.edit_message_text()
         f""" 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
 📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
