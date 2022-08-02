@@ -21,15 +21,7 @@ async def jumbled_button(c:Client, m:Message):
     if aktif:
         await m.reply("**❗Tʜᴇ  Gᴀᴍᴇ  Is  Aʟʀᴇᴀᴅʏ  Iɴ  Pʀᴏɢʀᴇss  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ  ✍🏻  \n  Tᴏ  Sᴛᴏᴘ  Tʜᴇ  Gᴀᴍᴇ,  Yᴏᴜ  Cᴀɴ  Tʏᴘᴇ  /cancel")
     else:
-        await m.reply(f"""
-🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
-💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
-📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
-🎲 Cʟᴜᴇ : {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} 
-
-✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
-        """)
+        await m.reply(f"""🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 \n💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1 \n📝 Wᴏʀᴅ :   <code>{kelime_list}</code> \n🎲 Cʟᴜᴇ : {oyun[m.chat.id]["kelime"][0]} \n✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} \n✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs""")
 
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
