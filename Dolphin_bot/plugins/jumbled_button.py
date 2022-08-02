@@ -10,7 +10,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 @Client.on_callback_query(filters.regex(r"jumbled_button"))
 async def jumbled_button(c:Client, m:Message):
-  def jumbled_button(update: Update, context: CallbackContext):
     global oyun
     aktif = False
     try:
@@ -42,4 +41,4 @@ async def jumbled_button(c:Client, m:Message):
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
         """
-        await update.effective_message.reply_text(text_down)
+        await m.reply_text(text_down)
