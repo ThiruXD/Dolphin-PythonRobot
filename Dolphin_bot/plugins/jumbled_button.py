@@ -1,5 +1,6 @@
 from pyrogram import Client
 from pyrogram import filters
+from telegram import Update
 from random import shuffle
 from pyrogram.types import Message
 from Dolphin_bot import oyun
