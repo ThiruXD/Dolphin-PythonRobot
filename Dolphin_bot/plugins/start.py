@@ -101,7 +101,9 @@ I Hᴀᴠᴇ Tᴏᴛᴀʟʟʏ 2 Gᴀᴍᴇ Eɴᴊᴏʏ Wɪᴛʜ Yᴏᴜʀ Fʀɪ�
                     InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ 🆎", callback_data="j_help"),
                 ],
                 [
-                    InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),   
+                    InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),
+                    InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),  
+                    InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help"),
                 ],
              ]
          ),
