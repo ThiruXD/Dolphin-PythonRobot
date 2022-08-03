@@ -4,8 +4,6 @@ from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-
-# Oyunu başlat. 
 @Client.on_message(filters.command("game_2")
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
