@@ -19,7 +19,7 @@ async def passs(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        if oyun[m.chat.id]["pass"] < 3:
+        if oyun[m.chat.id]["pass"] < 30:
             oyun[m.chat.id]["pass"] += 1 
             await c.send_message(m.chat.id,f"❗  Yᴏᴜ  Hᴀᴠᴇ  3  Pᴀssᴇs  Iɴ  Tᴏᴛᴀʟ!\n➡️  Wᴏʀᴅ  Pᴀss  Is  ᴏᴜᴛ! \n✏️  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ 🥳 : **<code>{oyun[m.chat.id]['kelime']}</code>**")
             
