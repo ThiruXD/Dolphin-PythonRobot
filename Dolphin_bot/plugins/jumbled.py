@@ -39,7 +39,8 @@ async def kelimeoyun(c:Client, m:Message):
         for harf in kelime:
             kelime_list+= harf + " "
         
-        text = f"""
+      await c.send_message(m.chat.id, 
+               f"""
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
 📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
@@ -52,7 +53,7 @@ async def kelimeoyun(c:Client, m:Message):
             [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help")]]
         ),
     )
-        await c.send_message(m.chat.id, text)
+ 
 
 
         
