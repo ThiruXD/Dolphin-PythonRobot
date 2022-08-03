@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-@Client.on_message(filters.command("game_2")
+@Client.on_message(filters.command("rules"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f""" 🐬  **Dᴏʟᴘʜɪɴ  Gᴀᴍᴇ  Rᴜʟᴇs**  📖
