@@ -6,7 +6,8 @@ from pyrogram.types import Message
 from Dolphin_bot import oyun
 from Dolphin_bot.helpers.kelimeler import *
 from Dolphin_bot.helpers.keyboards import *
-from pyrogram.errors import FloodWait, CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
+from pyrogram.errors import FloodWait, Message
+from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_callback_query(filters.regex(r"jumbled_button"))
 async def kelimeoyun(_, query: CallbackQuery, message: Message):
@@ -35,3 +36,4 @@ async def kelimeoyun(_, query: CallbackQuery, message: Message):
         
         for harf in kelime:
             kelime_list+= harf + " "
+
