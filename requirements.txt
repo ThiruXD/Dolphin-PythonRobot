@@ -10,3 +10,4 @@ python-dotenv
 python-telegram-bot
 opencv-python-headless
 pbot
+TgCrypto>=1.2.2
