@@ -47,7 +47,11 @@ async def kelimeoyun(c:Client, m:Message):
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)}
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 
-        """, reply_markup=pass_down)
+        """, 
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help")]]
+        ),
+    )
         await c.send_message(m.chat.id, text, reply_markup=InlineKeyboardMarkup(pass_down))
 
 
