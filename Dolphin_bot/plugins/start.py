@@ -106,6 +106,9 @@ async def cbhelp(_, query: CallbackQuery):
                     InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),   
                 ],
              ]
+         ),
+        disable_web_page_preview=True,
+    )
 
 
 @Client.on_callback_query(filters.regex("p_help"))
