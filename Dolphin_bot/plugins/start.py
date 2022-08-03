@@ -121,16 +121,14 @@ async def cbbasic(_, query: CallbackQuery):
 /play (song name) - play song from youtube
 /ytp (song name) - play song directly from youtube 
 /stream (reply to audio) - play song using audio file
-/playlist - show the list song in queue
-/song (song name) - download song from youtube
+/playlist - download song from youtube
 /search (video name) - search video from youtube detailed
 /video (video name) - download video from youtube detailed
 /lyric - (song name) lyrics scrapper
 
 ⚡ __Powered by A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),
-              InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp"),  
+            [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp"),  
               InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help")]]
         ),
     )
@@ -153,8 +151,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡ __Powered by Jolphine A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="j_help"),
-              InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp"),  
-              InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="p_help")]]
+            [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),  
+              InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
         ),
     )
