@@ -97,8 +97,8 @@ I Hᴀᴠᴇ Tᴏᴛᴀʟʟʏ 2 Gᴀᴍᴇ Eɴᴊᴏʏ Wɪᴛʜ Yᴏᴜʀ Fʀɪ�
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 paraphrase", callback_data="p_help"),
-                    InlineKeyboardButton("📕 Jumbled", callback_data="j_help"),
+                    InlineKeyboardButton("✍ Pᴀʀᴀᴘʜʀᴀsᴇ", callback_data="p_help"),
+                    InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ 🆎", callback_data="j_help"),
                 ],
                 [
                     InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),   
