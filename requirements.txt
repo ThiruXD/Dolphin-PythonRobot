@@ -9,3 +9,4 @@ Pyrogram
 python-dotenv
 python-telegram-bot
 opencv-python-headless
+nltk.txt
