@@ -40,13 +40,21 @@ buttons = [
 
 
 HELP = """
-**✌️  Wᴇʟᴄᴏᴍᴇ  Tᴏ  Cᴏᴍᴍᴀɴᴅs  Mᴇɴᴜ.**
+✨ **Hɪ ! I'ᴍ [Dᴏʟᴘʜɪɴ 🐬](https://t.me/DolphinGameBot)  Bᴀsᴇᴅ Oɴ Gᴀᴍᴇ Bᴏᴛ 🇺🇸
 
-/game  -  Gᴇɴᴇʀᴀᴛᴇ  Wᴏʀᴅ  Sᴛᴀʀᴛs  Tʜᴇ  Gᴀᴍᴇ.
-  /pass  -  Pᴀss  Tʜᴇ  Wᴏʀᴅ.
-  /score  -  Cᴏᴍᴘᴇᴛɪᴛɪᴠᴇ  Iɴғᴏʀᴍᴀᴛɪᴏɴ  Bᴇᴛᴡᴇᴇɴ  Pʟᴀʏᴇʀs.
-  /cancel  -  Eɴᴅs  Tʜᴇ  Wᴏʀᴅ  Dᴇʀɪᴠᴀᴛɪᴏɴ  Gᴀᴍᴇ.
+I Hᴀᴠᴇ Tᴏᴛᴀʟʟʏ 2 Gᴀᴍᴇ Eɴᴊᴏʏ Wɪᴛʜ Yᴏᴜʀ Fʀɪᴇɴᴅs 🥳
 """
+help_buttons = [
+            [
+                InlineKeyboardButton("✍ Pᴀʀᴀᴘʜʀᴀsᴇ", callback_data="p_help"),
+                InlineKeyboardButton("Jᴜᴍʙʟᴇᴅ 🆎", callback_data="j_help"),
+            ],
+            [
+                InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),
+                InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bstart"),  
+                InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help"),
+           ],
+        ]
 
 # Komutlar. 
 @Client.on_message(filters.command("start"))
@@ -57,8 +65,11 @@ async def start(_, m):
                 reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.command("help"))
-async def help(bot, message):
-  await message.reply_photo("https://telegra.ph/file/dd8c2a4a6a2294682e892.jpg",caption=HELP) 
+async def help(_, m):
+             await m.reply_photo(
+               photo=random.choice(HMF_IMG),
+                caption=HELP.format(m.from_user.mention),                   
+                reply_markup=InlineKeyboardMarkup(help_buttons))
 
 
  
