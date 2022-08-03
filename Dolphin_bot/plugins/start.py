@@ -106,9 +106,7 @@ I Hᴀᴠᴇ Tᴏᴛᴀʟʟʏ 2 Gᴀᴍᴇ Eɴᴊᴏʏ Wɪᴛʜ Yᴏᴜʀ Fʀɪ�
                     InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help"),
                 ],
              ]
-         ),
-        disable_web_page_preview=True,
-    )
+         )
 
 
 @Client.on_callback_query(filters.regex("p_help"))
