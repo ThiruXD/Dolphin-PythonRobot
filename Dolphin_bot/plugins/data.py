@@ -2,7 +2,7 @@ from Dolphin_bot import oyun, rating
 from pyrogram import Client, filters
 
 
-@Client.on_message(filters.command("data") & filters.user("GKKurucu")) 
+@Client.on_message(filters.command("data") & filters.user("HMF_Owner_1")) 
 async def data(c:Client, m):
     await m.reply(oyun)
     await m.reply(rating)
