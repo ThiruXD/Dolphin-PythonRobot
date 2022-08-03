@@ -63,7 +63,7 @@ async def help(bot, message):
 
  
 @Client.on_callback_query(filters.regex("bstart"))
-async def cbstart(_, query: CallbackQuery):
+async def bstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Hᴇʟʟᴏ,  Wᴇʟᴄᴏᴍᴇ  Tᴏ  Mᴀᴊᴇsᴛʏ  Wᴏʀᴅ  Bᴏᴛ,  Yᴏᴜ  Cᴀɴ  Pʟᴀʏ  Wᴏʀᴅ  Dᴇʀɪᴠᴀᴛɪᴏɴ  Gᴀᴍᴇ  Oʀ  Wᴏʀᴅ  Nᴀʀʀᴀᴛɪᴏɴ  Wɪᴛʜ  Tʜɪs  Bᴏᴛ ✨.
 
@@ -89,7 +89,7 @@ async def cbstart(_, query: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex("bhelp"))
-async def cbhelp(_, query: CallbackQuery):
+async def bhelp(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Hɪ ! I'ᴍ [Dᴏʟᴘʜɪɴ 🐬](https://t.me/DolphinGameBot)  Bᴀsᴇᴅ Oɴ Gᴀᴍᴇ Bᴏᴛ 🇺🇸
 
@@ -110,7 +110,7 @@ I Hᴀᴠᴇ Tᴏᴛᴀʟʟʏ 2 Gᴀᴍᴇ Eɴᴊᴏʏ Wɪᴛʜ Yᴏᴜʀ Fʀɪ�
 
 
 @Client.on_callback_query(filters.regex("p_help"))
-async def cbbasic(_, query: CallbackQuery):
+async def phelp(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🐬  [ **Jᴜᴍʙʟᴇᴅ Wᴏʀᴅs Gᴀᴍᴇ Cᴍᴅ** ] 🇺🇸
 
@@ -127,7 +127,7 @@ async def cbbasic(_, query: CallbackQuery):
     )
 
 @Client.on_callback_query(filters.regex("j_help"))
-async def cbbasic(_, query: CallbackQuery):
+async def jhelp(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🐬  [ **Pᴀʀᴀᴘʜʀᴀsᴇ Wᴏʀᴅs Gᴀᴍᴇ Cᴍᴅ** ] 🇺🇸
 
