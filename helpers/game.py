@@ -12,11 +12,11 @@ def make_sure_in_game(context: CallbackContext) -> bool:
     if game:
         if (time() - game['start']) >= 300:
             end_game(context)
-            raise Exception('There is no game going on.')
+            raise Exception('Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  /game_1  Aɢᴀɪɴ 🧐')
 
         return True
 
-    raise Exception('There is no game going on.')
+    raise Exception('Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  /game_1  Aɢᴀɪɴ 🧐')
 
 
 def make_sure_not_in_game(context: CallbackContext) -> bool:
@@ -27,7 +27,7 @@ def make_sure_not_in_game(context: CallbackContext) -> bool:
             end_game(context)
             return True
 
-        raise Exception('There is a game going on.')
+        raise Exception('Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  /game_1  Aɢᴀɪɴ 🧐')
 
     return True
 
