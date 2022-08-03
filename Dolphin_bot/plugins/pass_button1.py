@@ -7,7 +7,7 @@ from Dolphin_bot.helpers.kelimeler import kelime_sec
 from Dolphin_bot import *
 
 @Client.on_message(filters.command("pass_button") & ~filters.private & ~filters.channel)
-async def passs(c:Client, m:Message):
+async def pass_button(c:Client, m:Message):
     global oyun
     
     try:
