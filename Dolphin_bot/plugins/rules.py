@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 @Client.on_message(filters.command("rules"))
 async def rules(c:Client, m:Message):
-    await c.send_message(
+    await c.send_message(m.chat.id, 
         f""" 🐬  **Dᴏʟᴘʜɪɴ  Gᴀᴍᴇ  Rᴜʟᴇs**  📖
 
 🌷  Tʜᴇ  ᴘᴇʀsᴏɴ  ᴡʜᴏ  ᴡʀɪᴛᴇs  ᴛʜᴇ  ɴᴀᴍᴇ  ᴏɴ  ᴛʜᴇ  ʙᴏᴛ  ɪs  ᴛʜᴇ  ᴘᴇʀsᴏɴ  ᴡʜᴏ  ᴏғғᴇʀs  ᴛʜᴇ  ᴡᴏʀᴅ.  
