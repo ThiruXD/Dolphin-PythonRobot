@@ -58,7 +58,7 @@ async def buldu(c:Client, m:Message):
                     kelime_list+= harf + " "
             
                 text = f"""
-**{m.from_user.mention}** Cᴏɴɢʀᴀᴛs! : **<code>{oyun[m.chat.id]['kelime']}</code>** ✅
+**{m.from_user.mention}** Eᴀʀɴᴇᴅ 1 pᴏɪɴᴛ  ✅
 
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
