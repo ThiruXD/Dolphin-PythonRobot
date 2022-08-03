@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
 # Oyunu başlat. 
-@Client.on_message(filters.command("bgame")) 
+@Client.on_message(filters.command("game_2")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
