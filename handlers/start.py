@@ -1,5 +1,6 @@
 import importlib
 import time
+import random
 import re
 from sys import argv
 from typing import Optional
@@ -59,3 +60,15 @@ HELP = """
   /score  -  Cᴏᴍᴘᴇᴛɪᴛɪᴠᴇ  Iɴғᴏʀᴍᴀᴛɪᴏɴ  Bᴇᴛᴡᴇᴇɴ  Pʟᴀʏᴇʀs.
   /cancel  -  Eɴᴅs  Tʜᴇ  Wᴏʀᴅ  Dᴇʀɪᴠᴀᴛɪᴏɴ  Gᴀᴍᴇ.
 """
+
+       
+    def start(update: Update, context: CallbackContext):
+             await m.reply_photo(
+               photo=random.choice(HMF_IMG),
+                caption=PM_START_TEXT.format(m.from_user.mention),                   
+                reply_markup=InlineKeyboardMarkup(buttons))
+          )
+
+
+    start_handler = CommandHandler("start", start)
+    dispatcher.add_handler(start_handler)
