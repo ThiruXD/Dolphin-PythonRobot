@@ -88,6 +88,65 @@ async def cbstart(_, query: CallbackQuery):
     )
 
 
+@Client.on_callback_query(filters.regex("bhelp"))
+async def cbhelp(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""✨ **Hello !**
+
+» **press the button below to read the explanation and see the list of available commands !**
+
+⚡ __Powered by {BOT_NAME} A.I__""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("📚 paraphrase", callback_data="p_help"),
+                    InlineKeyboardButton("📕 Jumbled", callback_data="j_help"),
+            ]
+        ),
+    )
 
 
-        
+@Client.on_callback_query(filters.regex("p_help"))
+async def cbbasic(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""🏮 **here is the basic commands**
+
+🎧 [ VOICE CHAT PLAY CMD ]
+
+/play (song name) - play song from youtube
+/ytp (song name) - play song directly from youtube 
+/stream (reply to audio) - play song using audio file
+/playlist - show the list song in queue
+/song (song name) - download song from youtube
+/search (video name) - search video from youtube detailed
+/video (video name) - download video from youtube detailed
+/lyric - (song name) lyrics scrapper
+
+⚡ __Powered by {BOT_NAME} A.I__""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="bhelp")]]
+        ),
+    )
+
+@Client.on_callback_query(filters.regex("j_help"))
+async def cbbasic(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""🏮 **here is the basic commands**
+
+🎧 [ VOICE CHAT PLAY CMD ]
+
+/play (song name) - play song from youtube
+/ytp (song name) - play song directly from youtube 
+/stream (reply to audio) - play song using audio file
+/playlist - show the list song in queue
+/song (song name) - download song from youtube
+/search (video name) - search video from youtube detailed
+/video (video name) - download video from youtube detailed
+/lyric - (song name) lyrics scrapper
+
+⚡ __Powered by Jolphine A.I__""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="bhelp")]]
+        ),
+    )
+
