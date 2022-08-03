@@ -45,7 +45,6 @@ async def kelimeoyun(c:Client, m:Message):
 🎲 Cʟᴜᴇ : {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)}
 
-✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 
 😁 Iғ  Dᴏɴ'ᴛ  Kɴᴏᴡ  Gɪᴠᴇ  /pass
         """
         await c.send_message(m.chat.id, text)
