@@ -41,10 +41,6 @@ buttons = [
 
 HELP = """
 **✌️  Wᴇʟᴄᴏᴍᴇ  Tᴏ  Cᴏᴍᴍᴀɴᴅs  Mᴇɴᴜ.**
-  /puzzle  -  Wᴏʀᴅ  Exᴘʀᴇssɪᴏɴ  Sᴛᴀʀᴛs  Tʜᴇ  Gᴀᴍᴇ.
-  /teacher  -  Bᴇɪɴɢ  A  Tᴇᴀᴄʜᴇʀ  Iɴ  Wᴏʀᴅ  Exᴘʀᴇssɪᴏɴ  Gᴀᴍᴇ..
-  /points  -  Cᴏᴍᴘᴇᴛɪᴛɪᴠᴇ  Iɴғᴏʀᴍᴀᴛɪᴏɴ  Bᴇᴛᴡᴇᴇɴ  Pʟᴀʏᴇʀs.
-
 
 /game  -  Gᴇɴᴇʀᴀᴛᴇ  Wᴏʀᴅ  Sᴛᴀʀᴛs  Tʜᴇ  Gᴀᴍᴇ.
   /pass  -  Pᴀss  Tʜᴇ  Wᴏʀᴅ.
