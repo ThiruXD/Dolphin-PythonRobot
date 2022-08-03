@@ -1,5 +1,6 @@
 from time import sleep
 from pyrogram import Client
+import telegram.ext as tg
 import logging
 from dotenv import load_dotenv, set_key, unset_key
 from os import getenv
