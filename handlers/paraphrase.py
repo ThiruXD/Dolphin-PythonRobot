@@ -43,5 +43,4 @@ def callback(update: Update, context: CallbackContext):
     )
 
 
-handler = CallbackQueryHandler(callback, pattern='paraphrase')
 handler = CommandHandler('game_1', callback)
