@@ -80,7 +80,7 @@ async def cbstart(_, query: CallbackQuery):
                     InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ⚠️", url="https://t.me/+u-YFXF8x-Rw0M2Rl"),
                 ],
                 [
-                    InlineKeyboardButton("📚  Cᴏᴍᴍᴀɴᴅs  Aɴᴅ  Hᴇʟᴘ  📚", callback_data="host"),   
+                    InlineKeyboardButton("📚  Cᴏᴍᴍᴀɴᴅs  Aɴᴅ  Hᴇʟᴘ  📚", callback_data="bhelp"),   
                 ],
              ]
          ),
@@ -104,9 +104,8 @@ async def cbhelp(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),   
-            ]
-        ),
-    )
+                ],
+             ]
 
 
 @Client.on_callback_query(filters.regex("p_help"))
