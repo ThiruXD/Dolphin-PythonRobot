@@ -7,9 +7,9 @@ from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessa
 
 
 app = Client(session_name="XOGame",
-             api_id=os.environ.get("API_ID"),
-             api_hash=os.environ.get("API_HASH"),
-             bot_token=os.environ.get("BOT_TOKEN")
+             api_id=os.environ.get("8967766"),
+             api_hash=os.environ.get("505dc1f394f59c8a55b1aa798a0715f9"),
+             bot_token=os.environ.get("5514703737:AAGrS1otFXawZrDjCfApwJEGgos2y7CBjk4")
              )
 
 
