@@ -58,13 +58,15 @@ async def buldu(c:Client, m:Message):
                     kelime_list+= harf + " "
             
                 text = f"""
+**{m.from_user.mention}**
+
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
 📝 Wᴏʀᴅ :   <code>{kelime_list}</code>
 🎲 Cʟᴜᴇ : {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)} 
 
-✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs
+😁 Iғ  Dᴏɴ'ᴛ  Kɴᴏᴡ  Gɪᴠᴇ  /pass
                         """
                 await c.send_message(m.chat.id, text)
     except KeyError:
