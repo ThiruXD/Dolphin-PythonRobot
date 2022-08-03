@@ -131,6 +131,7 @@ async def cbbasic(_, query: CallbackQuery):
             [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp"),  
               InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help")]]
         ),
+        disable_web_page_preview=True,
     )
 
 @Client.on_callback_query(filters.regex("j_help"))
@@ -154,4 +155,5 @@ async def cbbasic(_, query: CallbackQuery):
             [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),  
               InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
         ),
+        disable_web_page_preview=True,
     )
