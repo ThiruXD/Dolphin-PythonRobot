@@ -8,7 +8,7 @@ from pyrogram.types import (
 from Dolphin_bot import pbot as bot
 from Dolphin_bot import OWNER_ID
 
-@bot.on_message(
+@Client.on_message(
     filters.private
     & filters.incoming
  )
