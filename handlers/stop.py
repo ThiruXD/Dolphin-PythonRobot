@@ -14,7 +14,8 @@ def callback(update: Update, context: CallbackContext):
             f'{update.effective_user.mention_html()} Tʜᴇ  Gᴀᴍᴇ  Is  Sᴛᴏᴘᴘᴇᴅ.🔴 /game_1@DolphinGameBot,  Yᴏᴜ  Cᴀɴ  Sᴛᴀʀᴛ  A  Nᴇᴡ  Gᴀᴍᴇ  Bʏ  Pʀᴇssɪɴɢ  Tʜᴇ  Bᴜᴛᴛᴏɴ.',
         )
     except Exception as e:
-        update.effective_message.reply_text(f'Error: {e}')
+        update.effective_message.reply_text(f'Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  
+Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  Aɢᴀɪɴ 🧐')
 
 
 handler = CommandHandler('stop', callback)
