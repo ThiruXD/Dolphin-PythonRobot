@@ -130,7 +130,6 @@ async def cbbasic(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
         ),
-        disable_web_page_preview=True,
     )
 
 @Client.on_callback_query(filters.regex("j_help"))
@@ -153,5 +152,4 @@ async def cbbasic(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
         ),
-        disable_web_page_preview=True,
     )
