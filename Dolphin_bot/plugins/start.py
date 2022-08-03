@@ -33,7 +33,7 @@ buttons = [
         InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ⚠️", url="https://t.me/+u-YFXF8x-Rw0M2Rl"),
     ],
     [
-        InlineKeyboardButton("📚  Cᴏᴍᴍᴀɴᴅs  Aɴᴅ  Hᴇʟᴘ  📚", callback_data="host"),   
+        InlineKeyboardButton("📚  Cᴏᴍᴍᴀɴᴅs  Aɴᴅ  Hᴇʟᴘ  📚", callback_data="bhelp"),   
     ],
 ]
 
@@ -101,6 +101,9 @@ async def cbhelp(_, query: CallbackQuery):
                 [
                     InlineKeyboardButton("📚 paraphrase", callback_data="p_help"),
                     InlineKeyboardButton("📕 Jumbled", callback_data="j_help"),
+                ],
+                [
+                    InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),   
             ]
         ),
     )
