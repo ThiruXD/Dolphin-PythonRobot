@@ -38,6 +38,7 @@ bot = Client(
     workers=16
 )
 
+pbot = Client("Dolphin_bot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 
 # Oyun Verileri
 oyun = {}  # type: ignore
