@@ -114,19 +114,15 @@ I Hᴀᴠᴇ Tᴏᴛᴀʟʟʏ 2 Gᴀᴍᴇ Eɴᴊᴏʏ Wɪᴛʜ Yᴏᴜʀ Fʀɪ�
 @Client.on_callback_query(filters.regex("p_help"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **here is the basic commands**
+        f"""🐬  [ **Jᴜᴍʙʟᴇᴅ Wᴏʀᴅs Gᴀᴍᴇ Cᴍᴅ** ] 🇺🇸
 
-🎧 [ VOICE CHAT PLAY CMD ]
+/game_1  -  Sᴛᴀʀᴛ  Jᴜᴍʙʟᴇᴅ  Wᴏʀᴅs  Gᴀᴍᴇ
 
-/play (song name) - play song from youtube
-/ytp (song name) - play song directly from youtube 
-/stream (reply to audio) - play song using audio file
-/playlist - download song from youtube
-/search (video name) - search video from youtube detailed
-/video (video name) - download video from youtube detailed
-/lyric - (song name) lyrics scrapper
+/stop  -  Tᴏ  Sᴛᴏᴘ  Jᴜᴍʙʟᴇᴅ  Wᴏʀᴅs  Gᴀᴍᴇ
 
-⚡ __Powered by A.I__""",
+/scores  -  Tᴏ  Sᴇᴇ  Yᴏᴜʀ  Pᴏɪɴᴛs
+
+/rules  -  Tᴏ  Sᴇᴇ  Gᴀᴍᴇ  Rᴜʟᴇs""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
         ),
