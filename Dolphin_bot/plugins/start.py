@@ -131,20 +131,15 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("j_help"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **here is the basic commands**
+        f"""🐬  [ **Pᴀʀᴀᴘʜʀᴀsᴇ Wᴏʀᴅs Gᴀᴍᴇ Cᴍᴅ** ] 🇺🇸
 
-🎧 [ VOICE CHAT PLAY CMD ]
+/game_2  -  Sᴛᴀʀᴛ  Pᴀʀᴀᴘʜʀᴀsᴇ  Wᴏʀᴅs  Gᴀᴍᴇ
 
-/play (song name) - play song from youtube
-/ytp (song name) - play song directly from youtube 
-/stream (reply to audio) - play song using audio file
-/playlist - show the list song in queue
-/song (song name) - download song from youtube
-/search (video name) - search video from youtube detailed
-/video (video name) - download video from youtube detailed
-/lyric - (song name) lyrics scrapper
+/pass  -  Tᴏ  Pᴀss  Cᴜʀʀᴇɴᴛ  Pᴀʀᴀᴘʜʀᴀsᴇ  Wᴏʀᴅ
 
-⚡ __Powered by Jolphine A.I__""",
+/cancel  -  Tᴏ  Cᴀɴᴄᴇʟ  Pᴀʀᴀᴘʜʀᴀsᴇ  Wᴏʀᴅs  Gᴀᴍᴇ
+
+/rules  -  Tᴏ  Sᴇᴇ  Gᴀᴍᴇ  Rᴜʟᴇs""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
         ),
