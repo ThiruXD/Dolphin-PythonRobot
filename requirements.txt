@@ -7,3 +7,4 @@ tgcrypto
 telethon
 python-dotenv
 python-telegram-bot
+opencv-python-headless
