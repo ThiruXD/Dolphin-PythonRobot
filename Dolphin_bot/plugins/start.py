@@ -127,7 +127,7 @@ async def cbbasic(_, query: CallbackQuery):
 /video (video name) - download video from youtube detailed
 /lyric - (song name) lyrics scrapper
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),
               InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp"),  
