@@ -1,3 +1,5 @@
 hmf: python3 main.py
 
 worker: python3 Dolphin_bot
+
+xox: python XOGameBot/main.py
