@@ -48,7 +48,7 @@ async def kelimeoyun(c:Client, m:Message):
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 
         """, reply_markup=pass_down)
-        await c.send_message(m.chat.id, text)
+        await c.send_message(m.chat.id, text, reply_markup=InlineKeyboardMarkup(pass_down))
 
 
         
