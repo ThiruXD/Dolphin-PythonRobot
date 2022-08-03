@@ -52,7 +52,7 @@ async def kelimeoyun(c:Client, m:Message):
             [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help")]]
         ),
     )
-        await c.send_message(m.chat.id, text, reply_markup=InlineKeyboardMarkup(pass_down))
+        await c.send_message(m.chat.id, text)
 
 
         
