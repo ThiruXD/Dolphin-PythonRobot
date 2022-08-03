@@ -5,6 +5,7 @@ from pyrogram.types import Message
 from Dolphin_bot import oyun
 from Dolphin_bot.helpers.kelimeler import *
 from Dolphin_bot.helpers.keyboards import *
+from Dolphin_bot.helpers.Pass_Buttons import *
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
@@ -46,7 +47,7 @@ async def kelimeoyun(c:Client, m:Message):
 ✍🏻 Lᴀʀɢᴇ : {int(len(kelime_list)/2)}
 
 ✏️ Fɪɴᴅ  Tʜᴇ  Cᴏʀʀᴇᴄᴛ  Wᴏʀᴅ  Fʀᴏᴍ  Tʜᴇ  Jᴜᴍʙʟᴇᴅ  Lᴇᴛᴛᴇʀs 
-        """
+        """, reply_markup=pass_down)
         await c.send_message(m.chat.id, text)
 
 
