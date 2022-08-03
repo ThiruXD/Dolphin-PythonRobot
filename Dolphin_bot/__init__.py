@@ -22,6 +22,7 @@ TOKEN = getenv("TOKEN")
 USERNAME = getenv("USERNAME")
 OWNER_ID = getenv("OWNER_ID", "")
 MONGO_URI = getenv('MONGO_URI')
+WORKERS = int(os.environ.get('WORKERS', 8))
 SUDO_USERS = list(map(int, getenv('SUDO_USERS').split()))
 
 if OWNER_ID and len(OWNER_ID) and OWNER_ID.isdigit():
