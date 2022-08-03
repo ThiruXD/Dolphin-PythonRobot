@@ -124,7 +124,8 @@ async def phelp(_, query: CallbackQuery):
 
 /rules  -  Tᴏ  Sᴇᴇ  Gᴀᴍᴇ  Rᴜʟᴇs""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
+            [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp"),
+              InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help")]]
         ),
     )
 
@@ -141,6 +142,7 @@ async def jhelp(_, query: CallbackQuery):
 
 /rules  -  Tᴏ  Sᴇᴇ  Gᴀᴍᴇ  Rᴜʟᴇs""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
+            [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),
+              InlineKeyboardButton("🔙 Gᴏ Bᴀᴄᴋ", callback_data="bhelp")]]
         ),
     )
