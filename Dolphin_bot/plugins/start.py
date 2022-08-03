@@ -91,11 +91,9 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("bhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Hello !**
+        f"""✨ **Hɪ ! I'ᴍ [Dᴏʟᴘʜɪɴ 🐬](https://t.me/DolphinGameBot)  Bᴀsᴇᴅ Oɴ Gᴀᴍᴇ Bᴏᴛ 🇺🇸
 
-» **press the button below to read the explanation and see the list of available commands !**
-
-⚡ __Powered by {BOT_NAME} A.I__""",
+I Hᴀᴠᴇ Tᴏᴛᴀʟʟʏ 2 Gᴀᴍᴇ Eɴᴊᴏʏ Wɪᴛʜ Yᴏᴜʀ Fʀɪᴇɴᴅs 🥳""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
