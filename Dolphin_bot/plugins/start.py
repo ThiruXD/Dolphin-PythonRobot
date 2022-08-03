@@ -129,7 +129,9 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="bhelp")]]
+            [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),
+              InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),  
+              InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help")]]
         ),
     )
 
@@ -151,7 +153,9 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡ __Powered by Jolphine A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="bhelp")]]
+            [[InlineKeyboardButton("❮ Nᴇxᴛ", callback_data="p_help"),
+              InlineKeyboardButton("🔙 Go Back", callback_data="bstart"),  
+              InlineKeyboardButton("Nᴇxᴛ ❯", callback_data="j_help")]]
         ),
     )
 
