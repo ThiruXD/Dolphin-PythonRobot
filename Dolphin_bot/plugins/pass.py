@@ -34,7 +34,7 @@ async def passs(c:Client, m:Message):
                 kelime_list+= harf + " "
             
             text = f"""
-**{m.from_user.mention}** Pᴀssᴇᴅ  Tʜᴇ  Wᴏʀᴅ  !  Cᴏʀʀᴇᴄᴛ  Aɴsᴡᴇʀ : **<code>{oyun[m.chat.id]['kelime']}</code>**
+**{m.from_user.mention}** Pᴀssᴇᴅ  Tʜᴇ  Wᴏʀᴅ 🥴
 
 🎯 Rᴏᴜɴᴅ : {oyun[m.chat.id]['round']}/60 
 💵 Pᴏɪɴᴛs  Eᴀʀɴᴇᴅ : 1
