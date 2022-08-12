@@ -7,12 +7,13 @@ from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
 from helpers.wrappers import nice_errors
+from helpers.wrappers import hoster_only
 from helpers.game import is_true
 
-
+@hoster_only
 def callback(update: Update, context: CallbackContext):
     try:
-        game = get_game(context)
+        game = end_game(context)
 
       if game['host'].id != update.effective_user.id:
             if is_true(update.effective_message.text, context):
