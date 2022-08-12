@@ -10,7 +10,7 @@ from helpers.wrappers import nice_errors
 from helpers.wrappers import hoster_only
 
 
-@hoster_only
+@nice_errors
 def callback(update: Update, context: CallbackContext):
    try:
       end_game(context)
