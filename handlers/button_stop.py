@@ -10,7 +10,6 @@ from helpers.wrappers import nice_errors
 from helpers.game import is_true
 
 
-@nice_errors
 def callback(update: Update, context: CallbackContext):
    try:
       end_game(context)
