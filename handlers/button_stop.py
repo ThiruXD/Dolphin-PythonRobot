@@ -10,13 +10,12 @@ from helpers.wrappers import nice_errors
 from helpers.wrappers import hoster_only
 from helpers.game import is_true
 
-@hoster_only
+@nice_errors
 def callback(update: Update, context: CallbackContext):
     try:
         game = end_game(context)
 
       if game['host'].id != update.effective_user.id:
-            if is_true(update.effective_message.text, context):
                update.effective_message.reply_text(
                  f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
                       reply_markup=InlineKeyboardMarkup(
@@ -30,6 +29,8 @@ def callback(update: Update, context: CallbackContext):
                         ],
                     ),
                 )
+      else:
+        update.callback_query.answer('Hᴏsᴛᴇʀ  Oɴʟʏ  Cᴀɴ  Sᴇᴇ  Tʜᴇ  Wᴏʀᴅ  !  😑', True)
 
 
 handler = CallbackQueryHandler(callback, pattern='button_stop')
