@@ -13,7 +13,8 @@ from helpers.wrappers import nice_errors
 def callback(update: Update, context: CallbackContext):
    try:
       end_game(context)
-       if game['host'].id == update.effective_message.reply_text(
+      if game['host'].id == update.effective_user.id:
+       update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
                         [
@@ -25,7 +26,7 @@ def callback(update: Update, context: CallbackContext):
                             ],
                         ],
                     ),
-                )
+               =True)
     except Exception as e:
         update.effective_message.reply_text(f'Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  Aɢᴀɪɴ 🧐')
 
