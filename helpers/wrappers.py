@@ -25,3 +25,11 @@ def nice_errors(handler: Callable):
                 update.effective_message.reply_text(f'Error: {e}')
 
     return wrapper
+ 
+def hoster_only(handler: Callable):
+    def wrapper(update: Update, context: CallbackContext):
+        if update.effective_chat.get_member(update.effective_user.id).status in ('host'):
+            return handler(update, context)
+
+    return wrapper
+
