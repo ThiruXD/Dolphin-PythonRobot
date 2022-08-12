@@ -21,12 +21,11 @@ def callback(update: Update, context: CallbackContext):
                             [
                                 InlineKeyboardButton(
                                     'I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁',
-                                    callback_data='host',
-                                ),
+                                    callback_data='host', game['word'], True)
                             ],
                         ],
                     ),
-               =True)
+                  )
     except Exception as e:
         update.effective_message.reply_text(f'Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  Aɢᴀɪɴ 🧐')
 
