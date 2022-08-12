@@ -11,8 +11,9 @@ from helpers.game import is_true
 
 
 def callback(update: Update, context: CallbackContext):
-   try:
-      end_game(context)
+    try:
+        game = get_game(context)
+
       if game['host'].id != update.effective_user.id:
             if is_true(update.effective_message.text, context):
                update.effective_message.reply_text(
