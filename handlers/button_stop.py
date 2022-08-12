@@ -7,6 +7,7 @@ from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
 from helpers.wrappers import nice_errors
+from helpers.game import is_true
 
 
 @nice_errors
@@ -17,7 +18,7 @@ def callback(update: Update, context: CallbackContext):
             if is_true(update.effective_message.text, context):
                update.effective_message.reply_text(
                  f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
-              reply_markup=InlineKeyboardMarkup(
+                      reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton(
@@ -28,6 +29,9 @@ def callback(update: Update, context: CallbackContext):
                         ],
                     ),
                 )
-    
+    except Exception as e:
+        update.effective_message.reply_text(f'Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  Aɢᴀɪɴ 🧐')
+
+
 
 handler = CallbackQueryHandler(callback, pattern='button_stop')
