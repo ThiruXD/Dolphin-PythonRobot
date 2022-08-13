@@ -10,7 +10,7 @@ from helpers.game import get_game
 from helpers.wrappers import nice_errors
 from helpers.wrappers import admin_only
 
-db = {}
+db = []
 
 def callback(update: Update, context: CallbackContext):
    try:
