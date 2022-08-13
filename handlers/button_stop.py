@@ -21,8 +21,7 @@ def callback(update: Update, context: CallbackContext):
                             [
                                 InlineKeyboardButton(
                                     'I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁',
-                                    callback_data='host', True
-                                ),
+                                    callback_data='host', True),
                             ],
                         ],
                     ),
