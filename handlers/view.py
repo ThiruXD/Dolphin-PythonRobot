@@ -6,7 +6,7 @@ from helpers.game import get_game
 from helpers.wrappers import nice_errors
 
 
-@nice_errors
+
 def callback(update: Update, context: CallbackContext):
     game = get_game(context)
 
