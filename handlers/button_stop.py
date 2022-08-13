@@ -20,7 +20,7 @@ def callback(update: Update, context: CallbackContext):
        db.append(idd)
    except Exception as e:
         print(e)
-   if db == update.effective_user.id:
+   if str(db) == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
