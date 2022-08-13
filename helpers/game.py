@@ -91,7 +91,7 @@ def end_game(context: CallbackContext) -> bool:
 
     return False
 
-@requires_game_running
+
 def host_game(context: CallbackContext) -> dict:
     return context.chat_data['game']
     if 'game' in context.chat_data:
