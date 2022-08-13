@@ -27,8 +27,6 @@ def callback(update: Update, context: CallbackContext):
                         ],
                     ),
                 )
-      else:
-        update.callback_query.answer('Hᴏsᴛᴇʀ  Oɴʟʏ  Cᴀɴ  Sᴇᴇ  Tʜᴇ  Wᴏʀᴅ  !  😑')
 
 
 handler = CallbackQueryHandler(callback, pattern='button_stop')
