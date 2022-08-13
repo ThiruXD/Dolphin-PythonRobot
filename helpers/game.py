@@ -92,7 +92,7 @@ def end_game(context: CallbackContext) -> bool:
     return False
 
 
-def host_game(context: CallbackContext) -> dict:
+def host_game(context: CallbackContext) -> bool:
     if 'game' in context.chat_data:
         try:
             del context.chat_data['game']
