@@ -34,7 +34,7 @@ def callback(update: Update, context: CallbackContext):
                     ),
                 )
         return
-    Except Exception as e:
+    except Exception as e:
         update.effective_message.reply_text(f'`{e}`')
 
 
