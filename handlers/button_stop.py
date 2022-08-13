@@ -8,10 +8,9 @@ from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
 from helpers.wrappers import nice_errors
-from helpers.wrappers import hoster_only
 
 
-@nice_error
+@nice_errors
 def callback(update: Update, context: CallbackContext):
     game = end_game(context)
 
