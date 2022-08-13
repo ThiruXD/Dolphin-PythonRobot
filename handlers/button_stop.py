@@ -18,11 +18,11 @@ def callback(update: Update, context: CallbackContext):
         end_game(context)
         game = get_game(context)
         return
-    if not game['host'].id == update.effective_user.id:
-          update.callback_query.answer('Leader Only can Refused   !  😑', True)    
-          return                      
-    else:
-        update.effective_message.reply_text(
+        if not game['host'].id == update.effective_user.id:
+              update.callback_query.answer('Leader Only can Refused   !  😑', True)    
+              return                      
+        else:
+            update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
                         [
@@ -35,7 +35,7 @@ def callback(update: Update, context: CallbackContext):
                         ],
                     ),
                 )
-        return
+            return
     except Exception as e:
         update.effective_message.reply_text(f'`{e}`')
 
