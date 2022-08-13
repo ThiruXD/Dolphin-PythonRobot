@@ -11,10 +11,11 @@ from helpers.wrappers import nice_errors
 from helpers.wrappers import hoster_only
 
 
-@hoster_only
+@nice_error
 def callback(update: Update, context: CallbackContext):
-    try:
-        end_game(context)
+    game = end_game(context)
+
+    if game['host'].id == update.effective_user.id:
         update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
