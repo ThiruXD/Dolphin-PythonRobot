@@ -6,13 +6,14 @@ from telegram.ext import CommandHandler
 from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
+from helpers.game import host_game
 from helpers.game import get_game
 from helpers.wrappers import nice_errors
 from helpers.wrappers import admin_only
 
 
 def callback(update: Update, context: CallbackContext):
-       game = get_game(context)
+       game = host_game(context)
        if game['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
