@@ -15,13 +15,14 @@ def callback(update: Update, context: CallbackContext):
     try:
         game = end_game(context)
         if game['host'].id == update.effective_message.reply_text(
-            f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
+            f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨', True)
             reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton(
                                     'I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁',
-                                    callback_data='host', True),
+                                    callback_data='host',
+                               ),
                             ],
                         ],
                     ),
