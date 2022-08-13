@@ -7,9 +7,10 @@ from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
 from helpers.wrappers import nice_errors
+from helpers.wrappers import admin_only
 
 
-
+@admin_only
 def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
