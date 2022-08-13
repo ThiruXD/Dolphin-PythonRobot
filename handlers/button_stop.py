@@ -1,4 +1,3 @@
-
 from telegram import Update
 from telegram import InlineKeyboardButton
 from telegram import InlineKeyboardMarkup
@@ -27,9 +26,8 @@ def callback(update: Update, context: CallbackContext):
                         ],
                     ),
                 )
-        except Exception as e:
+    except Exception as e:
         update.effective_message.reply_text(f'Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  Aɢᴀɪɴ 🧐')
-
 
 
 handler = CallbackQueryHandler(callback, pattern='button_stop')
