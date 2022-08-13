@@ -18,7 +18,7 @@ def callback(update: Update, context: CallbackContext):
        game = get_game(context)
        idd = game['host'].id
        db.append(idd)
-       print(db)
+       update.effective_message.reply_text(db)
    except Exception as e:
         print(e)
    if str(db) == update.effective_user.id:
