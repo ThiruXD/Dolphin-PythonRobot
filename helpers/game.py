@@ -96,7 +96,7 @@ def host_game(context: CallbackContext) -> dool:
     if 'game' in context.chat_data:
         try:
             del context.chat_data['game']
-            return context.chat_data['game']
+            return True
         except Exception as e:
             raise e
 
