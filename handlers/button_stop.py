@@ -12,6 +12,7 @@ from helpers.wrappers import admin_only
 
 
 def callback(update: Update, context: CallbackContext):
+       end_game(context)
        game = get_game(context)
        if game['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
