@@ -101,5 +101,5 @@ def host_game(context: CallbackContext) -> dict:
         except Exception as e:
             raise e
     return False
-  return context.chat_data['game']
+
 
