@@ -17,14 +17,14 @@ def callback(update: Update, context: CallbackContext):
        game = get_game(context)
    except Exception as e:
         print(e)
-       if game['host'].id == update.effective_user.id:
+   if game['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
                         [[InlineKeyboardButton('I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁', callback_data='host')]]))
                           
-       else:
-              update.callback_query.answer('Leader Only can Refused   !  😑', True)
+   else:
+       update.callback_query.answer('Leader Only can Refused   !  😑', True)
 
 handler = CallbackQueryHandler(callback, pattern='button_stop')
 
