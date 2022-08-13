@@ -29,8 +29,8 @@ def callback(update: Update, context: CallbackContext):
                         ],
                     ),
                 )
-    except Exception as e:
-        update.effective_message.reply_text(f'Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  Aɢᴀɪɴ 🧐')
+    else:
+        update.callback_query.answer('Hᴏsᴛᴇʀ  Oɴʟʏ  Cᴀɴ  Sᴇᴇ  Tʜᴇ  Wᴏʀᴅ  !  😑')
 
 
 handler = CallbackQueryHandler(callback, pattern='button_stop')
