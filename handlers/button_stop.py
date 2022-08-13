@@ -10,14 +10,16 @@ from helpers.game import get_game
 from helpers.wrappers import nice_errors
 from helpers.wrappers import admin_only
 
+db = {}
 
 def callback(update: Update, context: CallbackContext):
    try:
        end_game(context)
        game = get_game(context)
+       db.append(game)
    except Exception as e:
         print(e)
-   if game['host'].id == update.effective_user.id:
+   if db['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
