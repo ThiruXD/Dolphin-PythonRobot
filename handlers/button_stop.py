@@ -12,10 +12,12 @@ from helpers.wrappers import admin_only
 
 
 
+
 def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
         game = get_game(context)
+        return
     if not game['host'].id == update.effective_user.id:
           update.callback_query.answer('Leader Only can Refused   !  😑', True)    
           return                      
