@@ -12,6 +12,7 @@ from helpers.wrappers import nice_errors
 
 @nice_errors
 def callback(update: Update, context: CallbackContext):
+    try:
     game = end_game(context)
 
     if game['host'].id == update.effective_user.id:
