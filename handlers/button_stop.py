@@ -9,7 +9,7 @@ from helpers.game import end_game
 from helpers.wrappers import nice_errors
 
 
-@nice_errors
+
 def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
