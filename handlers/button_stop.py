@@ -21,7 +21,7 @@ def callback(update: Update, context: CallbackContext):
         if not game['host'].id == update.effective_user.id:
               update.callback_query.answer('Leader Only can Refused   !  😑', True)    
               return                      
-        else:
+        if game['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
