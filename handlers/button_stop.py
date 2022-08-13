@@ -1,3 +1,4 @@
+
 from telegram import Update
 from telegram import InlineKeyboardButton
 from telegram import InlineKeyboardMarkup
@@ -7,13 +8,12 @@ from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
 from helpers.wrappers import nice_errors
-from helpers.wrappers import hoster_only
 
 
 @nice_errors
 def callback(update: Update, context: CallbackContext):
-   try:
-      end_game(context)
+    try:
+        end_game(context)
         update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
@@ -32,4 +32,3 @@ def callback(update: Update, context: CallbackContext):
 
 
 handler = CallbackQueryHandler(callback, pattern='button_stop')
-
