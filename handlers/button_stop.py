@@ -22,7 +22,7 @@ def callback(update: Update, context: CallbackContext):
                reply_markup=InlineKeyboardMarkup(
                        [[InlineKeyboardButton('I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁', callback_data='host')]]))
                           
-       else:
+       except Exception as e:
               update.callback_query.answer('Leader Only can Refused   !  😑', True)
 
                     
