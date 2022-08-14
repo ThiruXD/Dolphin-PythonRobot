@@ -94,6 +94,7 @@ def end_game(context: CallbackContext) -> bool:
 
 def host_game(context: CallbackContext) -> bool:
     if 'game' in context.chat_data:
+        try:
             del context.chat_data['game']
             return True
         except Exception as e:
