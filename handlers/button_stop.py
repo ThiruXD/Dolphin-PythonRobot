@@ -15,11 +15,10 @@ from helpers.wrappers import admin_only
 def callback(update: Update, context: CallbackContext):
        game = host_game(context)
        if game['host'].id == update.effective_user.id:
-               end_game(context)
-               update.effective_message.reply_text(
-               f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
-               reply_markup=InlineKeyboardMarkup(
-                       [[InlineKeyboardButton('I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁', callback_data='host')]]))
+            update.effective_message.reply_text(
+            f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
+            reply_markup=InlineKeyboardMarkup(
+                        [[InlineKeyboardButton('I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁', callback_data='host')]]))
                           
        else:
               update.callback_query.answer('Leader Only can Refused   !  😑', True)
