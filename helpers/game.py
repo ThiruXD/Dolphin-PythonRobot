@@ -91,17 +91,15 @@ def end_game(context: CallbackContext) -> bool:
 
     return False
 
-def host_game(context: CallbackContext) -> bool:
-    game = context.chat_data.get('game')
+def host_game(context: CallbackContext) -> dict:
+    if 'game' in context.chat_data:
+        try:
+            del context.chat_data['game']
+            return True
+        except Exception as e:
+            raise e
 
-    if game:
-        if (time() - game['start']) >= 300:
-            end_game(context)
-            raise Exception('Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  /game_1  Aɢᴀɪɴ 🧐')
-
-        return True
-
-    raise Exception('Aʟʀᴇᴀᴅʏ  Gᴀᴍᴇ  Gᴏɪɴɢ  Oɴ  Usᴇ  /stop Aɴᴅ  Sᴛᴀʀᴛ  /game_1  Aɢᴀɪɴ 🧐')
+    return False
 
 
 
