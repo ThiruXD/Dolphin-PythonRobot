@@ -12,7 +12,7 @@ from helpers.wrappers import admin_only
 
 
 def callback(update: Update, context: CallbackContext):
-       game = get_game(context), end_game(context)
+       game = host_game(context)
        if game['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
