@@ -13,10 +13,10 @@ from helpers.wrappers import admin_only
 
 
 def callback(update: Update, context: CallbackContext):
-try:
-   end_game(context)
-except Exception as e:
-   print(e)
+ try:
+    end_game(context)
+ except Exception as e:
+   ‌‌ print(e)
     try:
        game = get_game(context)
        if game['host'].id == update.effective_user.id:
