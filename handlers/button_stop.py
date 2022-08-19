@@ -13,11 +13,11 @@ from helpers.wrappers import admin_only
 
 def callback(update: Update, context: CallbackContext):
     try:
-       end_game(context) 
+       get_game(context) 
     except Exception:
         pass
     try:
-       game = get_game(context)
+       game = end_game(context)
        if game['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
