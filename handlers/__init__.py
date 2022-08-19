@@ -2,6 +2,7 @@ from telegram.ext import Dispatcher
 
 from . import stop
 from . import button_stop
+from . import button2stop
 from . import host
 from . import message
 from . import paraphrase
@@ -14,6 +15,7 @@ from . import view
 
 def add_handlers(dp: Dispatcher):
     dp.add_handler(stop.handler)
+    dp.add_handler(button2stop.handler)
     dp.add_handler(button_stop.handler)
     dp.add_handler(host.handler)
     dp.add_handler(message.handler)
