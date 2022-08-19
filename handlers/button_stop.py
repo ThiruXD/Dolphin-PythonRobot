@@ -14,7 +14,11 @@ from helpers.wrappers import admin_only
 
 def callback(update: Update, context: CallbackContext):
     try:
-       end_game(context) and game = get_game(context)
+       end_game(context) 
+    except Exception:
+        pass
+    try:
+       game = get_game(context)
        if game['host'].id == update.effective_user.id:
             update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
@@ -24,7 +28,7 @@ def callback(update: Update, context: CallbackContext):
        else:
               update.callback_query.answer('Leader Only can Refused   !  😑', True)
 
-    except ExplicitException:
-       pass
+    except Exception:
+        pass
                     
 handler = CallbackQueryHandler(callback, pattern='button_stop')
