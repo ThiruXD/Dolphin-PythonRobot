@@ -8,12 +8,13 @@ from telegram.ext import CallbackQueryHandler
 from helpers.game import end_game
 from helpers.wrappers import nice_errors
 from helpers.game import host_game
+from helpers.game import get_game
 
 
 
 def callback(update: Update, context: CallbackContext):
     try:
-        host_game(context)
+        get_game(context)
         update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
