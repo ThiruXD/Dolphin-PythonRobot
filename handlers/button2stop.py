@@ -27,4 +27,6 @@ def callback(update: Update, context: CallbackContext):
 
                     
 
-handler = CallbackQueryHandler(callback, pattern='button_stop')
+handler = CallbackQueryHandler(callback, pattern='button2stop')
+
+
