@@ -90,20 +90,3 @@ def end_game(context: CallbackContext) -> bool:
             raise e
 
     return False
-
-@requires_game_running
-def host_game(context: CallbackContext) -> dict:
-    return context.chat_data['game']
-        try:
-            del context.chat_data['game']
-            return True
-        except Exception as e:
-            raise e
-
-    return False
-
-
-    
-    
-
-
