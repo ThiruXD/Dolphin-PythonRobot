@@ -10,10 +10,10 @@ from helpers.wrappers import nice_errors
 from helpers.game import host_game
 
 
-@host_game
+
 def callback(update: Update, context: CallbackContext):
     try:
-        end_game(context)
+        host_game(context)
         update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
             reply_markup=InlineKeyboardMarkup(
