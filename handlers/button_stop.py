@@ -6,28 +6,28 @@ from telegram.ext import CommandHandler
 from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
-from helpers.game import get_game
-from helpers.wrappers import nice_errors
 from helpers.wrappers import admin_only
 
 
+@admin_only
 def callback(update: Update, context: CallbackContext):
     try:
-       get_game(context) 
-    except Exception:
-        pass
-    try:
-       game = end_game(context)
-       if game['host'].id == update.effective_user.id:
-            update.effective_message.reply_text(
-            f'{update.effective_user.mention_html()} Rᴇғᴜsᴇᴅ  Tᴏ  Lᴇᴀᴅ ! 🥺✨',
+        end_game(context)
+        update.effective_message.reply_text(
+            f'{update.effective_user.mention_html()} refused to lead!.',
             reply_markup=InlineKeyboardMarkup(
-                        [[InlineKeyboardButton('I  Wᴀɴᴛ  Tᴏ  Bᴇ  A  Lᴇᴀᴅᴇʀ  🦁', callback_data='host')]]))
-                          
-       else:
-              update.callback_query.answer('Leader Only can Refused   !  😑', True)
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    'I want to be the host',
+                                    callback_data='host',
+                                ),
+                            ],
+                        ],
+                    ),
+                )
+    except Exception as e:
+        update.effective_message.reply_text(f'Error: {e}')
 
-    except Exception:
-        pass
-                    
+
 handler = CallbackQueryHandler(callback, pattern='button_stop')
