@@ -12,6 +12,8 @@ from helpers.game import end_game
 def callback(update: Update, context: CallbackContext):
     try:
         end_game(context)
+    new_game(update.effective_user, context)
+    db.update(update.effective_chat.id, update.effective_chat.title)
         update.effective_message.reply_text(
             f'{update.effective_user.mention_html()} refused to lead!.',
             reply_markup=InlineKeyboardMarkup(
