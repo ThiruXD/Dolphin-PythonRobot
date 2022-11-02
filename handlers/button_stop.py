@@ -6,7 +6,7 @@ from telegram.ext import CommandHandler
 from telegram.ext import CallbackQueryHandler
 
 from helpers.game import end_game
-
+from helpers.game import new_game
 
 
 def callback(update: Update, context: CallbackContext):
