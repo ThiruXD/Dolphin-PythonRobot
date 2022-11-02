@@ -11,7 +11,6 @@ from helpers.game import new_game
 
 def callback(update: Update, context: CallbackContext):
     try:
-        end_game(context)
         new_game(update.effective_user, context)
         db.update(update.effective_chat.id, update.effective_chat.title)
         update.effective_message.reply_text(
