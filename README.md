@@ -2,6 +2,8 @@
     ──「 Dolphin Game Bot 」──
 </h2>
 
+<p align="center">Note: Use it for education purpose because this repo is Non-Maintenance. Multi-purpose game bot based on ptb-python created by ThiruXD.</p>
+
 <p align="center">
   <img src="https://telegra.ph/file/f94bce597b995e1569f7e.jpg">
 </p>
@@ -23,21 +25,21 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/AnonymousR1025/AnonXMusic"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/ThiruXD/Dolphin-PythonRobot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴏᴋᴛᴇᴛᴏ 」─
 </h3>
 
-<p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/AnonymousR1025/AnonXMusic"><img src="https://img.shields.io/badge/Deploy%20On%20Okteto-black?style=for-the-badge&logo=Okteto" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/ThiruXD/Dolphin-PythonRobot"><img src="https://img.shields.io/badge/Deploy%20On%20Okteto-black?style=for-the-badge&logo=Okteto" width="220" height="38.45"/></a></p>
 
 <h3 align="center">
     ─「 sᴜᴩᴩᴏʀᴛ 」─
 </h3>
 
 <p align="center">
-<a href="https://telegram.me/PlayBoysDXD"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/BYNF_TamilChat"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <p align="center">
@@ -52,3 +54,6 @@
 <a href="https://t.me/Tamilchat_Cringe_Guys"> <img src="https://img.shields.io/badge/HMF-Cringe-black?style=for-the-badge&logo=github" alt="Pyrogram" /> </a>
 </p>
 
+## Credit 
+
+## • [Hacker](Https://GitHub.com/ThiruXD)
