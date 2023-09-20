@@ -5,10 +5,6 @@
 <p align="center">Note: Use it for education purpose because this repo is Non-Maintenance. Multi-purpose game bot based on ptb-python created by ThiruXD.</p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/f94bce597b995e1569f7e.jpg">
-</p>
-
-<p align="center">
 <a href="https://github.com/AnonymousR1025/AnonXMusic/stargazers"><img src="https://img.shields.io/github/stars/AnonymousR1025/AnonXMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
 <a href="https://github.com/AnonymousR1025/AnonXMusic/network/members"> <img src="https://img.shields.io/github/forks/AnonymousR1025/AnonXMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/AnonymousR1025/AnonXMusic/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
